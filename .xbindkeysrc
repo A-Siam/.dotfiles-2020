@@ -1,0 +1,178 @@
+# General system config
+
+"termite"
+    Mod4 + Return
+
+"xbacklight -dec 10"
+    Mod2 + XF86MonBrightnessDown
+
+"xbacklight -inc 10"
+    Mod2 + XF86MonBrightnessUp
+
+"chromium"
+    Mod4 + w
+
+"pamixer -i 10 --allow-boost"
+    Mod2 +XF86AudioRaiseVolume
+
+"pamixer -d 10 "
+    Mod2 + XF86AudioLowerVolume
+
+"$HOME/.scripts/res-xbindkeys"
+    Mod4 + Mod2 + R
+
+# personal bindings
+#
+
+"redshift -O 5500"
+    Mod4 + equal
+
+"redshift -x"
+    Mod4 + minus
+
+"code"
+    Mod4 + c
+
+"$HOME/.scripts/dmenu-power"
+    Mod4 + Shift + p
+
+"clipmenu"
+    Mod2+Mod4 + period
+
+"termite -e "vim $HOME/todo""
+    Mod4 + alt +t
+
+"termite -e "vim /home/asiam/.xbindkeysrc"" # configure bindings
+	Mod4+ Alt + b
+
+"termite -e "vim /home/asiam/.xinitrc"" # configure bindings
+	Mod4+ Alt + i
+
+"termite -e "vim /home/asiam/.config/bspwm/bspwmrc"" # configure bindings
+	Mod4+ Alt + w
+
+"termite -e "vim /home/asiam/.vimrc"" # configure bindings
+	Mod4+ Alt + v
+
+"termite -e "ranger""
+	Mod4 + f
+
+"pcmanfm"
+	Mod4 + Shift + f
+
+"termite -e "htop""
+	Mod4 + m
+
+"flameshot gui"
+    Mod2 + Print
+
+"mpv /run/media/asiam/MyFiles/Music/chiptune/65800_DNK_ZXF06_18.mp3 --loop"
+    Mod2 + Mod4 +slash
+
+"pkill mpv"
+    Mod4+Shift+slash
+
+"termite -e "$HOME/.scripts/fzf-pcmanfm /run/media/$USER""
+    Mod4+alt+0
+
+"$HOME/.scripts/dmenu-google"
+    Alt+Mod2+Mod4 + slash
+
+"$HOME/.scripts/dmenu-youtube"
+    Alt+Mod2+Mod4 + apostrophe
+
+"xinput --disable 10"
+    Mod4 + Shift + t
+
+"xinput --enable 10"
+    Mod4  + t
+
+# bspwm config
+"dmenu_run -b"
+    Mod4+d
+
+"bspc desktop next.occupied -f"
+    Alt+Mod2 + Tab
+
+"bspc desktop prev.occupied -f"
+    Alt+z
+
+"bspc quit"
+    Shift+Mod4 + e
+
+"bspc desktop ^1 -f"
+	Mod4 + 1
+
+"bspc desktop ^2 -f"
+	Mod4 + 2
+
+"bspc desktop ^3 -f"
+	Mod4 + 3
+
+"bspc desktop ^4 -f"
+	Mod4 + 4
+
+"bspc desktop ^5 -f"
+	Mod4 + 5
+
+"bspc desktop ^6 -f"
+	Mod4 + 6
+
+"bspc desktop ^7 -f"
+	Mod4 + 7
+
+"bspc desktop ^8 -f"
+	Mod4 + 8
+
+"bspc desktop ^9 -f"
+	Mod4 + 9
+
+"bspc node -c"
+	Mod4 + Shift + q
+
+"bspc node -d ^1"
+	Mod4 + Shift + 1
+"bspc node -d ^2"
+	Mod4 + Shift + 2
+"bspc node -d ^3"
+	Mod4 + Shift + 3
+"bspc node -d ^4"
+	Mod4 + Shift + 4
+"bspc node -d ^5"
+	Mod4 + Shift + 5
+"bspc node -d ^6"
+	Mod4 + Shift + 6
+"bspc node -d ^7"
+	Mod4 + Shift + 7
+"bspc node -d ^2"
+	Mod4 + Shift + 8
+"bspc node -d ^8"
+	Mod4 + Shift + 8
+"bspc node -d ^9"
+	Mod4 + Shift + 9
+
+"bspc node west -f"
+    Mod4 + h
+"bspc node east -f"
+    Mod4 + l
+"bspc node north -f"
+    Mod4 + k
+"bspc node south -f"
+    Mod4 + j
+
+"bspc node -t fullscreen"
+    Mod2+Mod4 + bracketright
+
+"bspc node -t tiled"
+    Mod2+Mod4 + bracketleft
+
+"bspc node -t floating"
+    Mod2+Mod4 +Shift + bracketleft
+
+"playerctl play-pause"
+    Mod2 + XF86AudioPlay
+
+"playerctl play-pause"
+    Mod2 + XF86AudioPause
+
+

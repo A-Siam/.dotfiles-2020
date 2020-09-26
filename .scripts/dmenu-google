@@ -1,0 +1,8 @@
+#! /usr/bin/env bash
+
+s=`echo -e "" | dmenu -p "Google Search" -b -sb "#00aa00" -sf "#000000" -nb "#000000" -nf "#00aa00"`
+
+if [[ $s != "" ]] 
+then
+chromium "https://www.google.com/search?q=$s"
+fi

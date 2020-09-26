@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cd $1
+x=`find * | fzf --algo=v2`
+$HOME/.scripts/sw pcmanfm $x 
+

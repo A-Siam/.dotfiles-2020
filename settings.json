@@ -1,0 +1,15 @@
+{
+    "editor.lineNumbers": "relative",
+    "workbench.colorTheme": "Ayu Mojave",
+    "window.titleBarStyle": "custom",
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.parameterHints.enabled": false,
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "todo-tree.tree.showScanModeButton": false,
+    "editor.minimap.enabled": false
+}

@@ -1,0 +1,8 @@
+#! /usr/bin/env bash
+
+s=`echo -e "" | dmenu -p "Youtube Search" -b -sb "#ee0000" -sf "#000000" -nb "#000000" -nf "#ee0000"`
+
+if [[ $s != "" ]] 
+then
+chromium "https://www.youtube.com/results?search_query=$s"
+fi

@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+
+op=`echo -e "poweroff\nsystemctl hibernate\nreboot" | dmenu -p "Power Options" -b -sb "#eeaa00" -sf "#000000" -nb "#000000" -nf "#eeaa00"`
+exec $op

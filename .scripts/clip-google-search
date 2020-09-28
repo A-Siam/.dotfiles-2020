@@ -4,6 +4,6 @@ inp=`xclip -out -selection c`
 
 if [[ $inp != "" ]] 
 then
-	chromium "https://www.google.com/search?q=$inp"
+	$BROWSER "https://www.google.com/search?q=$inp"
 fi
 

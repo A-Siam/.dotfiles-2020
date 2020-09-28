@@ -1,6 +1,6 @@
 # General system config
 
-"termite"
+"urxvt"
     Mod4 + Return
 
 "xbacklight -dec 10"
@@ -17,12 +17,20 @@
 
 "pamixer -d 10 "
     Mod2 + XF86AudioLowerVolume
+"pamixer -t"
+Mod2 + XF86AudioMute
 
 "$HOME/.scripts/res-xbindkeys"
     Mod4 + Mod2 + R
 
 # personal bindings
 #
+
+"$HOME/.scripts/clip-google-search"
+	Alt+Mod2+Mod4 + s
+
+"$HOME/.scripts/clip-eta"
+	Alt+Mod2+Mod4 + x
 
 "redshift -O 5500"
     Mod4 + equal
@@ -34,33 +42,36 @@
     Mod4 + c
 
 "$HOME/.scripts/dmenu-power"
-    Mod4 + Shift + p
+    Mod4 + p
 
 "clipmenu"
     Mod2+Mod4 + period
 
-"termite -e "vim $HOME/todo""
+"urxvt -e sh -c "vim $HOME/todo""
     Mod4 + alt +t
 
-"termite -e "vim /home/asiam/.xbindkeysrc"" # configure bindings
+"urxvt -e  sh -c "vim $HOME/.zshrc""
+    Mod4 + alt +z
+
+"urxvt -e sh -c "vim /home/asiam/.xbindkeysrc"" # configure bindings
 	Mod4+ Alt + b
 
-"termite -e "vim /home/asiam/.xinitrc"" # configure bindings
+"urxvt -e sh -c  "vim /home/asiam/.xinitrc"" # configure bindings
 	Mod4+ Alt + i
 
-"termite -e "vim /home/asiam/.config/bspwm/bspwmrc"" # configure bindings
+"urxvt -e sh -c "vim /home/asiam/.config/bspwm/bspwmrc"" # configure bindings
 	Mod4+ Alt + w
 
-"termite -e "vim /home/asiam/.vimrc"" # configure bindings
+"urxvt -e sh -c "vim /home/asiam/.vimrc"" # configure bindings
 	Mod4+ Alt + v
 
-"termite -e "ranger""
+"urxvt -e sh -c "ranger""
 	Mod4 + f
 
 "pcmanfm"
 	Mod4 + Shift + f
 
-"termite -e "htop""
+"urxvt -e sh -c "htop""
 	Mod4 + m
 
 "flameshot gui"
@@ -72,7 +83,7 @@
 "pkill mpv"
     Mod4+Shift+slash
 
-"termite -e "$HOME/.scripts/fzf-pcmanfm /run/media/$USER""
+"urxvt -e sh -c "$HOME/.scripts/fzf-fm /run/media/$USER""
     Mod4+alt+0
 
 "$HOME/.scripts/dmenu-google"
@@ -80,6 +91,9 @@
 
 "$HOME/.scripts/dmenu-youtube"
     Alt+Mod2+Mod4 + apostrophe
+
+"$HOME/.scripts/dmenu-xgamma"
+	Alt+Mod2+Mod4 + bracketright
 
 "xinput --disable 10"
     Mod4 + Shift + t
@@ -90,6 +104,18 @@
 # bspwm config
 "dmenu_run -b"
     Mod4+d
+
+"bspc node --to-node south"
+    Mod4+ Shift +j
+
+"bspc node --to-node north"
+    Mod4+ Shift +k
+
+"bspc node --to-node east"
+    Mod4+ Shift +l
+
+"bspc node --to-node west"
+    Mod4 + Shift + h
 
 "bspc desktop next.occupied -f"
     Alt+Mod2 + Tab
@@ -174,5 +200,11 @@
 
 "playerctl play-pause"
     Mod2 + XF86AudioPause
+
+"playerctl previous"
+    XF86AudioPrev
+
+"playerctl next"
+    XF86AudioNext
 
 

@@ -6,6 +6,7 @@ numlockx &
 setxkbmap -layout us,ar && setxkbmap -option 'grp:win_space_toggle'&
 clipmenud &
 flameshot &
+xrdb ~/.Xresources &
 
 # for enabling gnome-keyring 
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)

@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+inp=`xclip -out -selection c`
+
+if [[ $inp != "" ]] 
+then
+	chromium "https://www.google.com/search?q=$inp"
+fi
+

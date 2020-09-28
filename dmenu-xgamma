@@ -1,8 +1,0 @@
-#! /usr/bin/env bash
-
-s=`echo -e "" | dmenu -p "Set gamma" -b -sb "#ffffff" -sf "#000000" -nb "#000000" -nf "#ffffff"`
-
-if [[ $s != "" ]] 
-then
-	xgamma -gamma $s
-fi

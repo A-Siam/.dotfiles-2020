@@ -17,6 +17,9 @@ set shellopts '-eu'
 # commands accordingly.
 set ifs "\n"
 
+# draw border
+set drawbox true
+
 set relativenumber on
 # leave some space at the top and the bottom of the screen
 set scrolloff 10
@@ -33,6 +36,9 @@ map gmc cd /run/media/asiam # computer
 map gmm cd /run/media/asiam/MyFiles/Music # music
 map gmss cd /run/media/asiam/MyFiles/CSE_selfstudy # self study
 map gmas cd /run/media/asiam/MyFiles/CSE_Acad # academic study
+
+# umount 
+map Um umount
 
 # dedicated keys for file opener actions
 # map o &mimeopen $f
@@ -51,6 +57,8 @@ cmd open ${{
     esac
 }}
 
+
+
 # define a custom 'rename' command without prompt for overwrite
 # cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
 # map r push :rename<space>
@@ -63,13 +71,13 @@ cmd open ${{
 cmd trash %set -f; mv $fx ~/.trash
 
 # define a custom 'delete' command
-# cmd delete ${{
-#     set -f
-#     printf "$fx\n"
-#     printf "delete?[y/n]"
-#     read ans
-#     [ $ans = "y" ] && rm -rf $fx
-# }}
+cmd delete ${{
+    set -f
+    printf "$fx\n"
+    printf "delete?[y/n]"
+    read ans
+    [ $ans = "y" ] && rm -rf $fx
+}}
 
 # use '<delete>' key for either 'trash' or 'delete' command
 # map <delete> trash
@@ -107,3 +115,6 @@ cmd zip ${{
     rm -rf $1
 }}
 
+cmd umount ${{
+	umount $fx
+}}

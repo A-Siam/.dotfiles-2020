@@ -1,6 +1,9 @@
 # interpreter for shell commands (needs to be POSIX compatible)
 set shell sh
 
+# 256 color supports
+set color256 on
+
 # set '-eu' options for shell commands
 # These options are used to have safer shell commands. Option '-e' is used to
 # exit on error and option '-u' is used to give error for unset variables.
@@ -27,7 +30,8 @@ set scrolloff 10
 # use enter for shell commands
 map <enter> shell
 map D delete
-
+# extract
+map X extract
 # execute current file (must be executable)
 map x $$f
 map X !$f
@@ -36,6 +40,7 @@ map gmc cd /run/media/asiam # computer
 map gmm cd /run/media/asiam/MyFiles/Music # music
 map gmss cd /run/media/asiam/MyFiles/CSE_selfstudy # self study
 map gmas cd /run/media/asiam/MyFiles/CSE_Acad # academic study
+map gmp cd /run/media/asiam/MyProjects # academic study
 
 # umount 
 map Um umount
@@ -117,4 +122,18 @@ cmd zip ${{
 
 cmd umount ${{
 	umount $fx
+}}
+
+cmd paste %{{
+    load=$(lf -remote 'load')
+    mode=$(echo "$load" | sed -n '1p')
+    list=$(echo "$load" | sed '1d')
+    l=$(echo "$list" | sed ':a;N;$!ba;s/\n/ /g')
+    if [ $mode = 'copy' ]; then
+        $TERMINAL -e sh -c "rsync --info=progress2 -ah $l . ; zsh"
+    elif [ $mode = 'move' ]; then
+        $TERMINAL -e sh -c "rsync --remove-source-files --info=progress2 -ah $l . ; zsh"
+    fi
+    lf -remote 'send load'
+    lf -remote 'send clear'
 }}

@@ -203,3 +203,4 @@ autocmd FileType nerdtree setlocal relativenumber
 
 let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
 
+set mouse=nvcr

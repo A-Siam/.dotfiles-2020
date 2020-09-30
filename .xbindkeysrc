@@ -1,6 +1,6 @@
 # General system config
 
-"urxvt"
+"$TERMINAL"
     Mod4 + Return
 
 "xbacklight -dec 10"
@@ -25,6 +25,17 @@ Mod2 + XF86AudioMute
 
 # personal bindings
 #
+"$TERMINAL -e sh -c "geek-life""
+	Alt+Mod4+t
+
+"$TERMINAL -e sh -c 'vim /home/$USER/.config/nvim/init.vim'"
+    Alt+Mod4+period
+
+"$TERMINAL -e sh -c "cd /run/media/asiam/MyProjects && vim""
+    Mod4+v
+
+"colorpicker --preview --one-shot --short | xclip -selection clipboard"
+	Mod4 + Alt + c 
 
 "$HOME/.scripts/clip-google-search"
 	Alt+Mod2+Mod4 + s
@@ -47,43 +58,40 @@ Mod2 + XF86AudioMute
 "clipmenu"
     Mod2+Mod4 + period
 
-"urxvt -e sh -c "vim $HOME/todo""
-    Mod4 + alt +t
-
-"urxvt -e  sh -c "vim $HOME/.zshrc""
+"$TERMINAL -e  sh -c "vim $HOME/.zshrc""
     Mod4 + alt +z
 
-"urxvt -e sh -c "vim /home/asiam/.xbindkeysrc"" # configure bindings
+"$TERMINAL -e sh -c "vim /home/asiam/.xbindkeysrc"" # configure bindings
 	Mod4+ Alt + b
 
-"urxvt -e sh -c  "vim /home/asiam/.xinitrc"" # configure bindings
+"$TERMINAL -e sh -c  "vim /home/asiam/.xinitrc"" # configure bindings
 	Mod4+ Alt + i
 
-"urxvt -e sh -c "vim /home/asiam/.config/bspwm/bspwmrc"" # configure bindings
+"$TERMINAL -e sh -c "vim /home/asiam/.config/bspwm/bspwmrc"" # configure bindings
 	Mod4+ Alt + w
 
-"urxvt -e sh -c "vim /home/asiam/.vimrc"" # configure bindings
+"$TERMINAL -e sh -c "vim /home/asiam/.vimrc"" # configure bindings
 	Mod4+ Alt + v
 
-"urxvt -e sh -c "ranger""
+"$TERMINAL -e sh -c lf"
 	Mod4 + f
 
 "pcmanfm"
 	Mod4 + Shift + f
 
-"urxvt -e sh -c "htop""
+"$TERMINAL -e sh -c "htop""
 	Mod4 + m
 
 "flameshot gui"
     Mod2 + Print
 
-"mpv /run/media/asiam/MyFiles/Music/chiptune/65800_DNK_ZXF06_18.mp3 --loop"
-    Mod2 + Mod4 +slash
+"mpv /run/media/asiam/MyFiles/Music/doom_metal/'Svafnir - Shadows In The Water-2E506FU01Lw.mp3' --loop"
+    Alt + Mod4 + m
 
 "pkill mpv"
-    Mod4+Shift+slash
+    Mod4+Alt+n
 
-"urxvt -e sh -c "$HOME/.scripts/fzf-fm /run/media/$USER""
+"$TERMINAL -e sh -c "$HOME/.scripts/fzf-fm /run/media/$USER""
     Mod4+alt+0
 
 "$HOME/.scripts/dmenu-google"
@@ -124,7 +132,7 @@ Mod2 + XF86AudioMute
     Alt+z
 
 "bspc quit"
-    Shift+Mod4 + e
+    Mod4 + F12
 
 "bspc desktop ^1 -f"
 	Mod4 + 1

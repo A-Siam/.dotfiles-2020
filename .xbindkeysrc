@@ -28,11 +28,8 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e sh -c "geek-life""
 	Alt+Mod4+t
 
-"$TERMINAL -e sh -c 'vim /home/$USER/.config/nvim/init.vim'"
-    Alt+Mod4+period
-
-"$TERMINAL -e sh -c "cd /run/media/asiam/MyProjects && vim""
-    Mod4+v
+"$TERMINAL -e sh -c "export TERM=xterm-256color; cd /run/media/asiam/MyProjects && vim""
+    Mod4 + c
 
 "colorpicker --preview --one-shot --short | xclip -selection clipboard"
 	Mod4 + Alt + c 
@@ -48,9 +45,6 @@ Mod2 + XF86AudioMute
 
 "redshift -x"
     Mod4 + minus
-
-"code"
-    Mod4 + c
 
 "$HOME/.scripts/dmenu-power"
     Mod4 + p

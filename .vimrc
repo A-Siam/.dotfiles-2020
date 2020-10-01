@@ -82,6 +82,7 @@ Plug 'preservim/nerdtree' |
 Plug 'mlaursen/vim-react-snippets'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'puremourning/vimspector'
+Plug 'preservim/nerdcommenter'
 
 call plug#end()
 

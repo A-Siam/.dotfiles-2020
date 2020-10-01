@@ -83,6 +83,7 @@ Plug 'mlaursen/vim-react-snippets'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'puremourning/vimspector'
 Plug 'preservim/nerdcommenter'
+Plug 'https://github.com/jiangmiao/auto-pairs.git'
 
 call plug#end()
 

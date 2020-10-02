@@ -61,6 +61,12 @@ set shiftwidth=4
 set expandtab
 
 call plug#begin('~/.vim/plugged')
+
+Plug 'heavenshell/vim-jsdoc', { 
+  \ 'for': ['javascript', 'javascript.jsx','typescript'], 
+  \ 'do': 'make install'
+\}
+
 Plug 'preservim/nerdtree'
 Plug 'ayu-theme/ayu-vim' 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -216,3 +222,5 @@ nmap <space>o :NERDTree
 let g:NERDCustomDelimiters={
 	\ 'javascript': { 'left': '//', 'right': '', 'leftAlt': '{/*', 'rightAlt': '*/}' },
 \}
+
+nmap <leader><space> :JsDoc<CR>

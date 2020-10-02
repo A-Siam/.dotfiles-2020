@@ -84,6 +84,7 @@ Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'puremourning/vimspector'
 Plug 'preservim/nerdcommenter'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
+Plug 'mg979/vim-visual-multi'
 
 call plug#end()
 
@@ -207,3 +208,7 @@ let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
 
 set mouse=nvcr
 set spell
+set ignorecase
+set smartcase
+
+nmap <space>o :NERDTree 

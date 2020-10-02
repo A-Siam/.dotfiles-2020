@@ -88,6 +88,8 @@ Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'mg979/vim-visual-multi'
 Plug 'ajmwagar/vim-deus'
 Plug 'Dimercel/todo-vim'
+Plug 'grvcoelho/vim-javascript-snippets'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -102,6 +104,9 @@ set termguicolors
 set encoding=UTF-8
 
 color ayu
+" love the ayu theme but i really hate how unnoticeable the line number is so...
+" NOTE: guifg because i use a gui terminal color YMMD
+highlight LineNr guifg=#649649 
 
 nmap <c-h> :vertical resize -5<CR>
 nmap <c-l> :vertical resize +5<CR>
@@ -214,14 +219,16 @@ set spell
 set ignorecase
 set smartcase
 
-nmap <space>o :NERDTree 
+nmap <space><space>o :NERDTree 
 
 let g:NERDCustomDelimiters={
 	\ 'javascript': { 'left': '//', 'right': '', 'leftAlt': '{/*', 'rightAlt': '*/}' },
 \}
 
 " after installing coc-docthis
-nmap <leader><space> :CocCommand docthis.documentThis<CR>
+nmap <space><space><space> :CocCommand docthis.documentThis<CR>
 
-nnoremap <leader><space>t :TODOToggle<CR>
-nmap <leader><leader>s :wa<CR>
+nnoremap <space><space>t :TODOToggle<CR>
+nmap <space><space>s :wa<CR>
+
+"

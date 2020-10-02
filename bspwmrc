@@ -23,7 +23,7 @@ bspc rule -a Zathura state=tiled desktop='^4'
 
 $HOME/.config/polybar/launch.sh
 
-feh --bg-center papers.co-nh36-flower-orange-forest-wood-lonely-dark-nature-flare-29-wallpaper.jpg
+feh --bg-fill $HOME/Wallpapers/2c6b401eecb5163f8ea322b79114ad67.jpg
 
 dunst &
 

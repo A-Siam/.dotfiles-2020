@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d 1 2 3 4 5 6 7 8 9
+bspc monitor eDP1 -d 1 2 3 4 5 6 7 8 9
 bspc config focus_follows_pointer true
 
 
@@ -17,10 +17,14 @@ bspc config gapless_monocle      true
 bspc rule -a Chromium desktop='^2'
 bspc rule -a code-oss desktop='^3'
 bspc rule -a Peek state=floating
+bspc rule -a Zathura state=tiled desktop='^4'
 # bspc rule -a Kupfer.py focus=on
 # bspc rule -a Screenkey manage=off
 
 $HOME/.config/polybar/launch.sh
-feh --bg-center $HOME/Wallpapers/wallpapersden.com_eagle-mountain-sunset-minimalist_1366x768.jpg
+
+feh --bg-fill $HOME/Wallpapers/2c6b401eecb5163f8ea322b79114ad67.jpg
+
 dunst &
+
 

@@ -62,11 +62,6 @@ set expandtab
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'heavenshell/vim-jsdoc', { 
-  \ 'for': ['javascript', 'javascript.jsx','typescript'], 
-  \ 'do': 'make install'
-\}
-
 Plug 'preservim/nerdtree'
 Plug 'ayu-theme/ayu-vim' 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -91,6 +86,8 @@ Plug 'puremourning/vimspector'
 Plug 'preservim/nerdcommenter'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'mg979/vim-visual-multi'
+Plug 'ajmwagar/vim-deus'
+Plug 'Dimercel/todo-vim'
 
 call plug#end()
 
@@ -223,4 +220,8 @@ let g:NERDCustomDelimiters={
 	\ 'javascript': { 'left': '//', 'right': '', 'leftAlt': '{/*', 'rightAlt': '*/}' },
 \}
 
-nmap <leader><space> :JsDoc<CR>
+" after installing coc-docthis
+nmap <leader><space> :CocCommand docthis.documentThis<CR>
+
+nnoremap <leader><space>t :TODOToggle<CR>
+nmap <leader><leader>s :wa<CR>

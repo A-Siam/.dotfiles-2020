@@ -231,4 +231,5 @@ nmap <space><space><space> :CocCommand docthis.documentThis<CR>
 nnoremap <space><space>t :TODOToggle<CR>
 nmap <space><space>s :wa<CR>
 
-"
+set cursorline
+set colorcolumn=80

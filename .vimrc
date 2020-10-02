@@ -212,3 +212,7 @@ set ignorecase
 set smartcase
 
 nmap <space>o :NERDTree 
+
+let g:NERDCustomDelimiters={
+	\ 'javascript': { 'left': '//', 'right': '', 'leftAlt': '{/*', 'rightAlt': '*/}' },
+\}

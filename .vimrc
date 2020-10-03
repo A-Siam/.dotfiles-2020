@@ -233,3 +233,5 @@ nmap <space><space>s :wa<CR>
 
 set cursorline
 set colorcolumn=80
+
+hi Normal guibg=NONE ctermbg=NONE

@@ -28,7 +28,10 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e sh -c "geek-life""
 	Alt+Mod4+t
 
-"$TERMINAL -e sh -c "export TERM=xterm-256color; cd /run/media/asiam/MyProjects && vim""
+#"$TERMINAL -e sh -c "export TERM=xterm-256color; cd /run/media/asiam/MyProjects && vim""
+    #Mod4 + c
+
+"code"
     Mod4 + c
 
 "colorpicker --preview --one-shot --short | xclip -selection clipboard"

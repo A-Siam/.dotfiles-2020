@@ -3,19 +3,19 @@
 "$TERMINAL"
     Mod4 + Return
 
-"xbacklight -dec 10"
+"xbacklight -dec 5"
     Mod2 + XF86MonBrightnessDown
 
-"xbacklight -inc 10"
+"xbacklight -inc 5"
     Mod2 + XF86MonBrightnessUp
 
 "chromium"
     Mod4 + w
 
-"pamixer -i 10 --allow-boost"
+"pamixer -i 5 --allow-boost"
     Mod2 +XF86AudioRaiseVolume
 
-"pamixer -d 10 "
+"pamixer -d 5 --allow-boost"
     Mod2 + XF86AudioLowerVolume
 "pamixer -t"
 Mod2 + XF86AudioMute
@@ -94,8 +94,11 @@ Mod2 + XF86AudioMute
 "$HOME/.scripts/dmenu-youtube"
     Alt+Mod2+Mod4 + apostrophe
 
-"$HOME/.scripts/dmenu-xgamma"
+"$HOME/.scripts/dmenu-wikipedia"
 	Alt+Mod2+Mod4 + bracketright
+
+"$HOME/.scripts/dmenu-archwiki"
+	Alt+Mod2+Mod4 + period
 
 "xinput --disable 10"
     Mod4 + Shift + t

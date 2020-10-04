@@ -11,7 +11,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "todo-tree.tree.showScanModeButton": false,
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "vim.handleKeys": {
     "<C-c>": false,
     "<C-x>": false,
@@ -23,5 +23,5 @@
   "editor.rulers": [80, 120],
   "workbench.colorCustomizations": {
     "editorLineNumber.foreground": "#999999"
-  }
+  },
 }

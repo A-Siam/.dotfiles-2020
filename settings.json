@@ -1,15 +1,27 @@
 {
-    "editor.lineNumbers": "relative",
-    "workbench.colorTheme": "Ayu Mojave",
-    "window.titleBarStyle": "custom",
-    "editor.smoothScrolling": true,
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.parameterHints.enabled": false,
-    "workbench.iconTheme": "vscode-icons",
-    "vsicons.dontShowNewVersionMessage": true,
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "todo-tree.tree.showScanModeButton": false,
-    "editor.minimap.enabled": false
+  "editor.lineNumbers": "relative",
+  "workbench.colorTheme": "Ayu Mojave",
+  "window.titleBarStyle": "custom",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.parameterHints.enabled": false,
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "todo-tree.tree.showScanModeButton": false,
+  "editor.minimap.enabled": true,
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-x>": false,
+    "<C-v>": false,
+    "<ESC>": true
+  },
+  "vim.easymotion": true,
+  "editor.wordWrap": "on",
+  "editor.rulers": [80, 120],
+  "workbench.colorCustomizations": {
+    "editorLineNumber.foreground": "#999999"
+  }
 }

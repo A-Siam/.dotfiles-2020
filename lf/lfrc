@@ -38,8 +38,8 @@ map X !$f
 # go to my
 map gmc cd /run/media/asiam # computer
 map gmm cd /run/media/asiam/MyFiles/Music # music
-map gmss cd /run/media/asiam/MyFiles/CSE_selfstudy # self study
-map gmas cd /run/media/asiam/MyFiles/CSE_Acad # academic study
+map gms cd /run/media/asiam/MyFiles/CSE_selfstudy # self study
+map gma cd /run/media/asiam/MyFiles/CSE_Acad # academic study
 map gmp cd /run/media/asiam/MyProjects # academic study
 
 # umount 

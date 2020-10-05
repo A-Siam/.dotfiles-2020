@@ -17,6 +17,7 @@
     "<C-x>": false,
     "<C-f>": false,
     "<C-k>": false,
+    "<C-b>": false,
     "<C-v>": false,
     "<ESC>": true
   },

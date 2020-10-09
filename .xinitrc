@@ -5,7 +5,6 @@ udiskie -t &
 numlockx &
 setxkbmap -layout us,ar && setxkbmap -option 'grp:win_space_toggle'&
 clipmenud &
-flameshot &
 xrdb ~/.Xresources &
 
 # for enabling gnome-keyring 

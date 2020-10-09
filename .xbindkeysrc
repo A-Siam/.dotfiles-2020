@@ -3,13 +3,16 @@
 "$TERMINAL"
     Mod4 + Return
 
+"blueman-manager"
+    Mod4 + b
+
 "xbacklight -dec 5"
     Mod2 + XF86MonBrightnessDown
 
 "xbacklight -inc 5"
     Mod2 + XF86MonBrightnessUp
 
-"chromium"
+"$BROWSER"
     Mod4 + w
 
 "pamixer -i 5 --allow-boost"
@@ -27,6 +30,9 @@ Mod2 + XF86AudioMute
 #
 "$TERMINAL -e sh -c "geek-life""
 	Alt+Mod4+t
+
+"postman"
+    Alt+Mod4+p
 
 #"$TERMINAL -e sh -c "export TERM=xterm-256color; cd /run/media/asiam/MyProjects && vim""
     #Mod4 + c
@@ -79,7 +85,7 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e sh -c "htop""
 	Mod4 + m
 
-"flameshot gui"
+"deepin-screenshot"
     Mod2 + Print
 
 "mpv /run/media/asiam/MyFiles/Music/doom_metal/'Svafnir - Shadows In The Water-2E506FU01Lw.mp3' --loop"

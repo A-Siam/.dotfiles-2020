@@ -1,7 +1,7 @@
 {
   "editor.lineNumbers": "relative",
   "workbench.colorTheme": "Ayu Mojave",
-  "window.titleBarStyle": "custom",
+  "window.titleBarStyle": "native",
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": true,
   "editor.parameterHints.enabled": false,
@@ -18,7 +18,7 @@
     "<C-f>": false,
     "<C-k>": false,
     "<C-b>": false,
-    "<C-v>": false,
+    "<C-d>": false,
     "<ESC>": true
   },
   "vim.easymotion": true,
@@ -27,4 +27,11 @@
   "workbench.colorCustomizations": {
     "editorLineNumber.foreground": "#999999"
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.activityBar.visible": true,
+  "window.menuBarVisibility": "toggle",
+  "workbench.editor.showTabs": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
 }

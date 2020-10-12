@@ -28,6 +28,9 @@ Mod2 + XF86AudioMute
 
 # personal bindings
 #
+"$HOME/.scripts/dmenu-simple-mtpfs"
+    Alt+Mod4+m
+
 "$TERMINAL -e sh -c "geek-life""
 	Alt+Mod4+t
 
@@ -76,7 +79,8 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e sh -c "vim /home/asiam/.vimrc"" # configure bindings
 	Mod4+ Alt + v
 
-"$TERMINAL -e sh -c lf"
+
+"$TERMINAL -e sh -c $FILEEXP"
 	Mod4 + f
 
 "pcmanfm"
@@ -119,6 +123,20 @@ Mod2 + XF86AudioMute
 "dmenu_run -b"
     Mod4+d
 
+"bspc node -p east"
+    Mod4+Right
+
+"bspc node -p north"
+    Mod4+Up
+
+"bspc node -p south"
+    Mod4+Down
+
+"bspc node -p west"
+    Mod4+Left
+
+"bspc node -p cancel"
+    Mod2+Mod4 + Escape
 "bspc node --to-node south"
     Mod4+ Shift +j
 

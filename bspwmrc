@@ -2,7 +2,8 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor eDP1 -d 1 2 3 4 5 6 7 8 9
+bspc monitor eDP1 -d 1 2 3 4 5 6 
+bspc monitor HDMI1 -d 7 8 9
 bspc config focus_follows_pointer true
 
 
@@ -23,7 +24,7 @@ bspc rule -a Zathura state=tiled desktop='^4'
 
 $HOME/.config/polybar/launch.sh
 
-feh --bg-fill $HOME/Wallpapers/2c6b401eecb5163f8ea322b79114ad67.jpg
+feh --bg-fill $HOME/Wallpapers/wallpapersden.com_eagle-mountain-sunset-minimalist_1366x768.jpg
 
 dunst &
 

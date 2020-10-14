@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 cd $1
-x=`find * | fzf --algo=v2`
+x=`find * | fzf`
 # $HOME/.scripts/sw ranger $x 
-lf $x 
+ranger $x 
+# lf $x 
 

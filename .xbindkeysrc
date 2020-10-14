@@ -37,8 +37,8 @@ Mod2 + XF86AudioMute
 "postman"
     Alt+Mod4+p
 
-#"$TERMINAL -e sh -c "export TERM=xterm-256color; cd /run/media/asiam/MyProjects && vim""
-    #Mod4 + c
+"$BROWSER https://github.com/"
+    Alt+Mod4+g
 
 "code"
     Mod4 + c
@@ -91,12 +91,6 @@ Mod2 + XF86AudioMute
 
 "deepin-screenshot"
     Mod2 + Print
-
-"mpv /run/media/asiam/MyFiles/Music/doom_metal/'Svafnir - Shadows In The Water-2E506FU01Lw.mp3' --loop"
-    Alt + Mod4 + m
-
-"pkill mpv"
-    Mod4+Alt+n
 
 "$TERMINAL -e sh -c "$HOME/.scripts/fzf-fm /run/media/$USER""
     Mod4+alt+0

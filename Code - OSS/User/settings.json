@@ -1,4 +1,5 @@
 {
+  "editor.fontFamily": "'Hack','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.lineNumbers": "relative",
   "workbench.colorTheme": "Ayu Mojave",
   "window.titleBarStyle": "native",
@@ -30,7 +31,8 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "window.menuBarVisibility": "toggle",
   "workbench.editor.showTabs": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
 }

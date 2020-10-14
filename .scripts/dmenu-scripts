@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+
+cd ~/.scripts
+
+s=`ls | dmenu -l 10 -p "My Scripts" -b -sb "#FFB454" -sf "#0A0E14" -nb "#0A0E14" -nf "#FFB454"`
+
+if [[ $s != "" ]] 
+then
+    ./$s	
+fi

@@ -1,5 +1,8 @@
 # General system config
 
+"~/.scripts/dmenu-scripts"
+    Mod4 + s
+
 "$TERMINAL"
     Mod4 + Return
 

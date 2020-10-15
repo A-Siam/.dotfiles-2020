@@ -51,4 +51,6 @@ alias t="$TERMINAL -e sh -c 'zsh' &"
 alias gmm="cd /run/media/$USER/MyFiles/Music"
 alias yi="yay -S"
 alias gmp="cd /run/media/$USER/MyProjects"
+alias srm="sudo pacman -Runs"
+alias grb="cd /home/asiam/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc/rust/html/book"
 

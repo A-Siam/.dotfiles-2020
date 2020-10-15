@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-inp=`xclip -out -selection c`
+inp=`xclip -out -selection`
 
 if [[ $inp != "" ]] 
 then

@@ -59,7 +59,7 @@ Mod2 + XF86AudioMute
     Mod4 + minus
 
 "$HOME/.scripts/dmenu-power"
-    Mod4 + p
+    Mod4 +alt +p
 
 "clipmenu"
     Mod2+Mod4 + period
@@ -118,7 +118,7 @@ Mod2 + XF86AudioMute
     Mod4+d
 
 "bspc node -n 'last.!automatic.local'"
-    Mod4+alt+p # "p" to "p"ush it to the "p"reselected
+    Mod4+ p # "p" to "p"ush it to the "p"reselected
 
 "bspc node -p north"
     Mod4+Up

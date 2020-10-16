@@ -37,9 +37,6 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e sh -c "geek-life""
 	Alt+Mod4+t
 
-"postman"
-    Alt+Mod4+p
-
 "$BROWSER https://github.com/"
     Alt+Mod4+g
 
@@ -120,8 +117,8 @@ Mod2 + XF86AudioMute
 "dmenu_run -b"
     Mod4+d
 
-"bspc node -p east"
-    Mod4+Right
+"bspc node -n 'last.!automatic.local'"
+    Mod4+alt+p # "p" to "p"ush it to the "p"reselected
 
 "bspc node -p north"
     Mod4+Up

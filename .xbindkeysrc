@@ -126,6 +126,9 @@ Mod2 + XF86AudioMute
 "bspc node -p south"
     Mod4+Down
 
+"bspc node -p east"
+    Mod4+Right
+
 "bspc node -p west"
     Mod4+Left
 

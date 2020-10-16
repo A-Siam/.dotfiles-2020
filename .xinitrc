@@ -13,4 +13,6 @@ source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 
 picom &
 
+alttab -w 1 -d 2 -font xft:Hack:style=Regular:8 -bg #0A0E14 -fg #FFB454 -frame #FFB454 -t 110x80 -i 110x40&
+
 exec bspwm

@@ -13,4 +13,7 @@ source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 
 picom &
 
+# my touchpad preference
+xinput --set-prop 10 'libinput Accel Speed' 0.5&
 exec bspwm
+

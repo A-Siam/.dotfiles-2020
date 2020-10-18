@@ -147,13 +147,10 @@ Mod2 + XF86AudioMute
     Mod4 + Shift + h
 
 "bspc desktop next.occupied -f"
-    Alt+Mod2 + Tab
+    alt + x
 
 "bspc desktop prev.occupied -f"
-    Alt+z
-
-"bspc quit"
-    Mod4 + F12
+    alt + z
 
 "bspc desktop ^1 -f"
 	Mod4 + 1

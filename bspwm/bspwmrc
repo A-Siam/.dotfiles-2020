@@ -12,11 +12,12 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 # bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
+bspc rule -a firefox desktop='^2'
 bspc rule -a code-oss desktop='^3'
 bspc rule -a Peek state=floating
 bspc rule -a Zathura state=tiled desktop='^4'
 bspc rule -a mpv state=tiled desktop='^5' follow=on
+bspc rule -a zoom sticky=on
 # bspc rule -a Kupfer.py focus=on
 # bspc rule -a Screenkey manage=off
 
@@ -24,10 +25,10 @@ bspc rule -a mpv state=tiled desktop='^5' follow=on
 
 $HOME/.config/polybar/launch.sh
 
-feh --bg-fill $HOME/Wallpapers/wallpapersden.com_eagle-mountain-sunset-minimalist_1366x768.jpg
+feh --bg-fill $HOME/Wallpapers/310923.jpg
 
 dunst &
 
-alttab -w 1 -d 2 -bg "#0A0E14" -fg "#FFB454" -frame "#FFB454" -t 110x80 -i 110x40 &
+alttab -w 1 -d 2 -bg "#0A0E14" -fg "#FFB454" -frame "#FFB454" -t 110x80 -i 110x32 &
 
 # $HOME/alttab.sh

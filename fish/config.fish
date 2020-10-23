@@ -10,6 +10,7 @@ set -x BROWSER firefox
 set -x TERMINAL urxvt
 set -x TERM xterm-256color
 set -x FILEEXP ranger
+set -x EDITOR vim
 
 # aliases
 alias jn="condaInit && jupyter notebook"

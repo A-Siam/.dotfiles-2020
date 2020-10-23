@@ -2,6 +2,7 @@ xbindkeys &
 nm-applet &
 blueman-applet &
 udiskie -t &
+batterymon &
 numlockx &
 setxkbmap -layout us,ar && setxkbmap -option 'grp:win_space_toggle'&
 clipmenud &

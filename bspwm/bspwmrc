@@ -18,6 +18,7 @@ bspc rule -a Peek state=floating
 bspc rule -a Zathura state=tiled desktop='^4'
 bspc rule -a mpv state=tiled desktop='^5' follow=on
 bspc rule -a zoom sticky=on
+bspc rule -a URxvt:scratch state=floating
 # bspc rule -a Kupfer.py focus=on
 # bspc rule -a Screenkey manage=off
 

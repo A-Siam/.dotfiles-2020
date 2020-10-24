@@ -26,6 +26,7 @@ alias srm="sudo pacman -Runs"
 alias grb="cd /home/asiam/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc/rust/html/book"
 alias gmf="cd /run/media/asiam/MyFiles"
 alias gmc="cd /run/media/asiam"
+alias p="python"
 
 # oracle xe env vars
 set -x ORACLE_HOME /opt/oracle/product/18c/dbhomeXE
@@ -35,3 +36,13 @@ set -x PATH $PATH:$ORACLE_HOME/bin
 # tasks 
 echo "don't forget to migrate with dev-db-connection whenever it changes"
 
+
+function conda_init;
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+eval /run/media/asiam/MyProjects/ML/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+# <<< conda initialize <<<;
+end
+
+# add normal python binaries to our path
+set PATH /home/asiam/.local/bin $PATH

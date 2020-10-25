@@ -1,5 +1,11 @@
 # General system config
 
+"pavucontrol"
+    Mod4 + p
+
+"blueman-manager"
+    Mod4 + b
+
 "~/.scripts/dmenu-scripts"
     Mod4 + s
 
@@ -34,6 +40,9 @@ Mod2 + XF86AudioMute
 "$HOME/.scripts/dmenu-simple-mtpfs"
     Alt+Mod4+m
 
+"urxvt -name "scratch""
+    Alt+Mod4+s
+
 "$TERMINAL -e sh -c "geek-life""
 	Alt+Mod4+t
 
@@ -47,7 +56,7 @@ Mod2 + XF86AudioMute
 	Mod4 + Alt + c 
 
 "$HOME/.scripts/clip-google-search"
-	Alt+Mod2+Mod4 + s
+	Alt+Mod2+Mod4 + slash
 
 "$HOME/.scripts/clip-eta"
 	Alt+Mod2+Mod4 + x
@@ -94,9 +103,6 @@ Mod2 + XF86AudioMute
 
 "$TERMINAL -e sh -c "$HOME/.scripts/fzf-fm /run/media/$USER""
     Mod4+alt+0
-
-"$HOME/.scripts/dmenu-google"
-    Alt+Mod2+Mod4 + slash
 
 "$HOME/.scripts/dmenu-youtube"
     Alt+Mod2+Mod4 + apostrophe

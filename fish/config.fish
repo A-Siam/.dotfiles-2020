@@ -31,7 +31,7 @@ alias gss="cd /run/media/asiam/MyProjects/Server-side"
 alias gmfsnd="cd /run/media/asiam/MyProjects/_MyFSND"
 alias ss="sudo su"
 alias ll="ls -l"
-alias jn="jupyter notebook"
+alias jn="conda_init && jupyter notebook"
 alias cr="cd /run/media/asiam/MyFiles/conf/"
 
 # oracle xe env vars

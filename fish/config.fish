@@ -27,15 +27,17 @@ alias grb="cd /home/asiam/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/sha
 alias gmf="cd /run/media/asiam/MyFiles"
 alias gmc="cd /run/media/asiam"
 alias p="python"
+alias gss="cd /run/media/asiam/MyProjects/Server-side"
+alias gmfsnd="cd /run/media/asiam/MyProjects/_MyFSND"
+alias ss="sudo su"
+alias ll="ls -l"
+alias jn="jupyter notebook"
+alias cr="cd /run/media/asiam/MyFiles/conf/"
 
 # oracle xe env vars
 set -x ORACLE_HOME /opt/oracle/product/18c/dbhomeXE
 set -x ORACLE_SID XE
 set -x PATH $PATH:$ORACLE_HOME/bin
-
-# tasks 
-echo "don't forget to migrate with dev-db-connection whenever it changes"
-
 
 function conda_init;
 # >>> conda initialize >>>
@@ -46,3 +48,6 @@ end
 
 # add normal python binaries to our path
 set PATH /home/asiam/.local/bin $PATH
+fish_vi_key_bindings
+
+echo "we can use the video summarization from the prev year's project"

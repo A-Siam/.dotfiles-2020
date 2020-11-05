@@ -1,4 +1,4 @@
 #! /usr/bin/env bash
 
-op=`echo -e "bspc quit\npoweroff\nsystemctl hibernate\nreboot" | dmenu -p "Power Options" -b -sb "#eeaa00" -sf "#000000" -nb "#000000" -nf "#eeaa00"`
+op=`echo -e "bspc quit\nsystemctl hibernate\npoweroff\nreboot" | dmenu -p "Power Options" -b -sb "#eeaa00" -sf "#000000" -nb "#000000" -nf "#eeaa00"`
 exec $op

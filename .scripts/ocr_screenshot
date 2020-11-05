@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+OCR_SCREENSHOT_PATH=$HOME/OCRScreenshots
+
+mkdir -p $OCR_SCREENSHOT_PATH
+import $OCR_SCREENSHOT_PATH/screen.png
+convert $OCR_SCREENSHOT_PATH/screen.png $OCR_SCREENSHOT_PATH/screen.tiff
+tesseract $OCR_SCREENSHOT_PATH/screen.tiff $OCR_SCREENSHOT_PATH/screen txt
+
+res=`cat $OCR_SCREENSHOT_PATH/screen.txt`
+
+echo $res | xclip -selection c
+notify-send "$res was coppied"
+

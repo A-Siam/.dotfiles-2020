@@ -101,8 +101,8 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e sh -c "htop""
 	Mod4 + m
 
-"deepin-screenshot"
-    Mod2 + Print
+"$HOME/.scripts/screenshot"
+    Print
 
 "$HOME/.scripts/ocr_screenshot"
     Mod2 + Shift + Print

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+mkdir -p $HOME/screenshots
+name=`date`
+echo $name
+import $HOME/screenshots/"$name".png

@@ -1,7 +1,13 @@
 # General system config
 
 "pavucontrol"
-    Mod4 + p
+    Mod4 + Shift + p
+
+"inkscape"
+    Mod4 + i
+
+"magnus"
+    Mod4 + Shift + m
 
 "blueman-manager"
     Mod4 + b
@@ -46,9 +52,6 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e sh -c "geek-life""
 	Alt+Mod4+t
 
-"$BROWSER https://github.com/"
-    Alt+Mod4+g
-
 "code"
     Mod4 + c
 
@@ -79,7 +82,7 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e sh -c "vim /home/asiam/.xbindkeysrc"" # configure bindings
 	Mod4+ Alt + b
 
-"$TERMINAL -e sh -c  "vim /home/asiam/.xinitrc"" # configure bindings
+"$TERMINAL -e sh -c  "vim /home/asiam/.xinitrc"" 
 	Mod4+ Alt + i
 
 "$TERMINAL -e sh -c "vim /home/asiam/.config/bspwm/bspwmrc"" # configure bindings
@@ -101,6 +104,12 @@ Mod2 + XF86AudioMute
 "deepin-screenshot"
     Mod2 + Print
 
+"$HOME/.scripts/ocr_screenshot"
+    Mod2 + Shift + Print
+
+"$HOME/.scripts/ocr_screenshot_google"
+    Mod4 + Shift + slash
+
 "$TERMINAL -e sh -c "$HOME/.scripts/fzf-fm /run/media/$USER""
     Mod4+alt+0
 
@@ -118,6 +127,18 @@ Mod2 + XF86AudioMute
 
 "xinput --enable 10"
     Mod4  + t
+
+"playerctl play-pause"
+    XF86AudioPlay
+
+"playerctl play-pause"
+    XF86AudioPause
+
+"playerctl previous"
+    XF86AudioPrev
+
+"playerctl next"
+    XF86AudioNext
 
 # bspwm config
 "dmenu_run -b"
@@ -226,17 +247,5 @@ Mod2 + XF86AudioMute
 
 "bspc node -t floating"
     Mod2+Mod4 +Shift + bracketleft
-
-"playerctl play-pause"
-    Mod2 + XF86AudioPlay
-
-"playerctl play-pause"
-    Mod2 + XF86AudioPause
-
-"playerctl previous"
-    XF86AudioPrev
-
-"playerctl next"
-    XF86AudioNext
 
 

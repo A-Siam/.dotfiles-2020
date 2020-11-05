@@ -9,6 +9,6 @@ tesseract $OCR_SCREENSHOT_PATH/screen.tiff $OCR_SCREENSHOT_PATH/screen txt
 
 res=`head --lines=-1 $OCR_SCREENSHOT_PATH/screen.txt`
 
-echo $res | xclip -selection c
-notify-send "$res was coppied"
+$BROWSER "https://www.google.com/search?q=$res"
 
+echo $res | xclip -selection c

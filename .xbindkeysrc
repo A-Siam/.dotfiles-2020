@@ -43,6 +43,9 @@ Mod2 + XF86AudioMute
 
 # personal bindings
 #
+"$BROWSER https://drive.google.com/drive/u/0/folders/1RqZoC7_pNArcAoXe1yn0MNruEve_kGlJ"
+    Mod4+Alt+d
+
 "$HOME/.scripts/dmenu-simple-mtpfs"
     Alt+Mod4+m
 

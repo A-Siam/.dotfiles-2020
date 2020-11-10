@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+inp=`xclip -out -selection`
+
+if [[ $inp != "" ]] 
+then
+	$BROWSER "https://www.youtube.com/results?search_query=$inp"
+fi
+

@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+cd ~/.scripts
+res=`fzf`
+if [[ $res != "" ]]
+then
+vim $res
+fi

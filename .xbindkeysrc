@@ -43,6 +43,9 @@ Mod2 + XF86AudioMute
 
 # personal bindings
 #
+"./.scripts/dmenu-msoffice"
+    Mod4 + o
+
 "$BROWSER https://drive.google.com/drive/u/0/folders/1RqZoC7_pNArcAoXe1yn0MNruEve_kGlJ"
     Mod4+Alt+d
 
@@ -79,7 +82,7 @@ Mod2 + XF86AudioMute
 "clipmenu"
     Mod2+Mod4 + period
 
-"$TERMINAL -e  sh -c "vim $HOME/.zshrc""
+"$TERMINAL -e  sh -c "vim $HOME/.config/fish/config.fish""
     Mod4 + alt +z
 
 "$TERMINAL -e sh -c "vim /home/asiam/.xbindkeysrc"" # configure bindings
@@ -116,10 +119,10 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e sh -c "$HOME/.scripts/fzf-fm /run/media/$USER""
     Mod4+alt+0
 
-"$HOME/.scripts/dmenu-youtube"
+"$HOME/.scripts/clip-youtube-search"
     Alt+Mod2+Mod4 + apostrophe
 
-"$HOME/.scripts/dmenu-wikipedia"
+"$HOME/.scripts/clip-wikipedia"
 	Alt+Mod2+Mod4 + bracketright
 
 "$HOME/.scripts/dmenu-archwiki"

@@ -85,3 +85,8 @@ URxvt.keysym.Control-Right:  \033[1;5C
 ! disable iso14755 to be able to paste normally with the plugin
 URxvt.iso14755: false
 URxvt.iso14755_52: false
+
+! urxvt keyboard scrolling
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+

@@ -147,6 +147,18 @@ Mod2 + XF86AudioMute
     XF86AudioNext
 
 # bspwm config
+"bspc node -z left -50 0 || bspc node -z right -50 0"
+    Mod4 + alt + h
+
+"bspc node -z right 50 0 || bspc node -z left 50 0"
+    Mod4 + alt + l
+
+"bspc node -z bottom 0 50 || bspc node -z top 0 50"
+    Mod4 + alt + j
+
+"bspc node -z top 0 -50 || bspc node -z bottom 0 -50"
+    Mod4 + alt + k
+
 "dmenu_run -b"
     Mod4+d
 

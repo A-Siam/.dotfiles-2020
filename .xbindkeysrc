@@ -1,8 +1,4 @@
 # General system config
-
-"pavucontrol"
-    Mod4 + Shift + p
-
 "inkscape"
     Mod4 + i
 
@@ -110,8 +106,11 @@ Mod2 + XF86AudioMute
 "$HOME/.scripts/screenshot"
     Print
 
+"$HOME/.scripts/root-screenshot"
+    Shift + Print
+
 "$HOME/.scripts/ocr_screenshot"
-    Mod2 + Shift + Print
+    Mod4 + Shift + Print
 
 "$HOME/.scripts/ocr_screenshot_google"
     Mod4 + Shift + slash

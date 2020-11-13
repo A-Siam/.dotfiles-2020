@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+import -window root "/home/$USER/screenshots/`date`.png" && notify-send "screenshot taken"

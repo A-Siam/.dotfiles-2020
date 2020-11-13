@@ -57,3 +57,5 @@ end
 set PATH /home/asiam/.local/bin $PATH
 fish_vi_key_bindings
 
+echo "implement hussin code"
+echo "use sql cl"

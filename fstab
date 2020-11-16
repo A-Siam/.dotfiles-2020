@@ -1,0 +1,14 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda1
+UUID=e9ac05db-f19c-4b70-a41b-bf5439f62219	/         	ext4      	rw,relatime	0 1
+
+# /dev/sda3
+UUID=5d278799-436c-4671-afc9-25f51c87026a	none      	swap      	defaults  	0 0
+
+# /dev/sda4
+UUID=D8F2-C252	/run/media/abdullah/MyFiles	vfat defaults,uid=1000,gid=1000 0 0
+
+UUID=4568d306-9b8c-4277-a9de-cd01b0bb3a01 /run/media/abdullah/MyProjects ext4 rw,nosuid,nodev,relatime 0 0

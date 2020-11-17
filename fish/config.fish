@@ -6,7 +6,7 @@ set -x CM_HISTLENGTH 20
 set -x CM_SELECTIONS "clipboard primary"
 set -x WINEPREFIX ~/win32
 
-set -x BROWSER firefox
+set -x BROWSER chromium
 set -x TERMINAL urxvt
 set -x TERM xterm-256color
 set -x FILEEXP ranger
@@ -40,6 +40,9 @@ alias ll="ls -l"
 alias jn="conda_init && jupyter notebook"
 alias cr="cd /run/media/asiam/MyFiles/conf/"
 alias sf="~/.scripts/sf"
+alias ga="git add -A"
+alias gc="git commit"
+alias gp="git push"
 
 # oracle xe env vars
 set -x ORACLE_HOME /opt/oracle/product/18c/dbhomeXE
@@ -57,5 +60,4 @@ end
 set PATH /home/asiam/.local/bin $PATH
 fish_vi_key_bindings
 
-echo "implement hussin code"
 echo "use sql cl"

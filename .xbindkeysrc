@@ -42,6 +42,9 @@ Mod2 + XF86AudioMute
 "./.scripts/dmenu-msoffice"
     Mod4 + o
 
+"$BROWSER https://github.com/"
+    Mod4+Alt+g
+
 "$BROWSER https://drive.google.com/drive/u/0/folders/1RqZoC7_pNArcAoXe1yn0MNruEve_kGlJ"
     Mod4+Alt+d
 
@@ -158,7 +161,7 @@ Mod2 + XF86AudioMute
 "bspc node -z top 0 -50 || bspc node -z bottom 0 -50"
     Mod4 + alt + k
 
-"dmenu_run -b"
+"rofi -show run"
     Mod4+d
 
 "bspc node -n 'last.!automatic.local'"

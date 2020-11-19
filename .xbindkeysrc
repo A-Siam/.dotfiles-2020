@@ -42,7 +42,7 @@ Mod2 + XF86AudioMute
 "./.scripts/dmenu-msoffice"
     Mod4 + o
 
-"$BROWSER https://github.com/"
+"$BROWSER https://https://github.com/"
     Mod4+Alt+g
 
 "$BROWSER https://drive.google.com/drive/u/0/folders/1RqZoC7_pNArcAoXe1yn0MNruEve_kGlJ"
@@ -149,6 +149,13 @@ Mod2 + XF86AudioMute
     XF86AudioNext
 
 # bspwm config
+
+"bsp-layout remove"
+    Mod4 + shift + y
+
+"bsp-layout set tall -- --master-size 0.5"
+    Mod4 + y
+
 "bspc node -z left -50 0 || bspc node -z right -50 0"
     Mod4 + alt + h
 
@@ -161,7 +168,7 @@ Mod2 + XF86AudioMute
 "bspc node -z top 0 -50 || bspc node -z bottom 0 -50"
     Mod4 + alt + k
 
-"rofi -show run"
+"dmenu_run -b"
     Mod4+d
 
 "bspc node -n 'last.!automatic.local'"

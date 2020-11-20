@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 inp=`echo "" | rofi -dmenu`
-$BROWSER "https://www.pdfdrive.com/search?q=$inp"
-$BROWSER "http://libgen.rs/search.php?req=$inp"
-$BROWSER "https://b-ok.africa/s/$inp"
-
+if [[ $inp != "" ]]
+then
+    $BROWSER "https://www.pdfdrive.com/search?q=$inp"
+    $BROWSER "http://libgen.rs/search.php?req=$inp"
+    $BROWSER "https://b-ok.africa/s/$inp"
+fi

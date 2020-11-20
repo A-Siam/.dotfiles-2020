@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+inp=`echo "" | rofi -dmenu`
+if [[ $inp != "" ]]
+then
+    $TERMINAL -e sh -c "~/.scripts/ytp '$inp'"
+fi

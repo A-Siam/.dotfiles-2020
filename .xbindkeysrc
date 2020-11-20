@@ -121,7 +121,7 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e sh -c "$HOME/.scripts/fzf-fm /run/media/$USER""
     Mod4+alt+0
 
-"$HOME/.scripts/clip-youtube-search"
+"$HOME/.scripts/rofi-ytp"
     Alt+Mod2+Mod4 + apostrophe
 
 "$HOME/.scripts/clip-wikipedia"
@@ -148,6 +148,9 @@ Mod2 + XF86AudioMute
 "playerctl next"
     XF86AudioNext
 
+"~/.scripts/rofi-bookseach"
+    Mod4 + Shift + b
+
 # bspwm config
 
 "bsp-layout remove"
@@ -168,7 +171,7 @@ Mod2 + XF86AudioMute
 "bspc node -z top 0 -50 || bspc node -z bottom 0 -50"
     Mod4 + alt + k
 
-"dmenu_run -b"
+"rofi -show run"
     Mod4+d
 
 "bspc node -n 'last.!automatic.local'"

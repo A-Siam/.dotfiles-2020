@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+inp=`echo "" | rofi -dmenu`
+
+if [[ $inp != "" ]] 
+then
+	$BROWSER "https://en.wikipedia.org/w/index.php?search=$inp"
+fi
+

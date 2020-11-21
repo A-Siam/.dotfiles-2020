@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-inp=`echo "" | rofi -dmenu`
+inp=`echo "" | rofi -dmenu -p "youtube search"`
 if [[ $inp != "" ]]
 then
     $TERMINAL -e sh -c "~/.scripts/ytp '$inp'"

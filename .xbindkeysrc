@@ -124,7 +124,7 @@ Mod2 + XF86AudioMute
 "$HOME/.scripts/rofi-ytp"
     Alt+Mod2+Mod4 + apostrophe
 
-"$HOME/.scripts/clip-wikipedia"
+"$HOME/.scripts/rofi-wikipedia"
 	Alt+Mod2+Mod4 + bracketright
 
 "$HOME/.scripts/dmenu-archwiki"

@@ -15,7 +15,7 @@ bspc config gapless_monocle      true
 bspc rule -a firefox desktop='^2' follow=on
 bspc rule -a Chromium desktop='^2' follow=on
 bspc rule -a qutebrowser desktop='^2' follow=on
-bspc rule -a code-oss desktop='^3'
+bspc rule -a Code desktop='^3'
 bspc rule -a Inkscape desktop='^1'
 bspc rule -a Peek state=floating
 bspc rule -a Magnus state=floating
@@ -37,4 +37,4 @@ dunst &
 
 alttab -w 1 -d 2 -bg "#0A0E14" -fg "#FFB454" -frame "#FFB454" -t 110x80 -i 110x32 &
 
-# $HOME/alttab.sh
+artha &

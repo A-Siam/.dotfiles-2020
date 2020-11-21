@@ -7,7 +7,7 @@
 ## https://gitlab.com/uoou/ytp
 ## GPL v. 2
 
-api_key="AIzaSyCp2Ti983dYCiTYRunqefn68ttxL1vEAB4"
+api_key="your key"
 # These API keys have limits. If the script inexplicably fails
 # create your own here: https://console.developers.google.com/
 # following these instructions: https://www.slickremix.com/docs/get-api-key-for-youtube/

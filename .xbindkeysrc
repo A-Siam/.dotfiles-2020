@@ -51,7 +51,7 @@ Mod2 + XF86AudioMute
 "$HOME/.scripts/dmenu-simple-mtpfs"
     Alt+Mod4+m
 
-"urxvt -name "scratch""
+"alacritty --class "scratch" -d 80 25"
     Alt+Mod4+s
 
 "$TERMINAL -e sh -c "geek-life""

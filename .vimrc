@@ -63,21 +63,20 @@ set expandtab
 call plug#begin('~/.vim/plugged')
 
 Plug 'preservim/nerdtree'
-Plug 'ayu-theme/ayu-vim' 
+Plug 'ayu-theme/ayu-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'ryanoasis/vim-devicons'
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'npm install',
-  \ 'branch': 'release/0.x'
-  \ }
+"Plug 'prettier/vim-prettier', {
+  "\ 'do': 'npm install',
+  "\ 'branch': 'release/0.x'
+  "\ }
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'vim-scripts/loremipsum'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mlaursen/vim-react-snippets'
@@ -90,6 +89,7 @@ Plug 'ajmwagar/vim-deus'
 Plug 'Dimercel/todo-vim'
 Plug 'grvcoelho/vim-javascript-snippets'
 Plug 'morhetz/gruvbox'
+Plug 'tell-k/vim-autopep8'
 
 call plug#end()
 
@@ -100,13 +100,14 @@ nmap <Tab> :NERDTreeToggle<CR>
 
 nnoremap <leader>n :NERDTree getcwd()<CR>
 
-set termguicolors
 set encoding=UTF-8
 
-color ayu
 " love the ayu theme but i really hate how unnoticeable the line number is so...
 " NOTE: guifg because i use a gui terminal color YMMD
-highlight LineNr guifg=#649649 
+highlight LineNr guifg=#649649
+
+color ayu
+set termguicolors
 
 nmap <c-h> :vertical resize -5<CR>
 nmap <c-l> :vertical resize +5<CR>
@@ -219,7 +220,7 @@ set spell
 set ignorecase
 set smartcase
 
-nmap <space><space>o :NERDTree 
+nmap <space><space>o :NERDTree
 
 let g:NERDCustomDelimiters={
 	\ 'javascript': { 'left': '//', 'right': '', 'leftAlt': '{/*', 'rightAlt': '*/}' },
@@ -235,3 +236,12 @@ set cursorline
 set colorcolumn=80
 
 hi Normal guibg=NONE ctermbg=NONE
+
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+set splitbelow
+nnoremap <space>t :term<CR>
+
+nnoremap <F3> :lvimgrep 
+nnoremap <space>m :lnext<CR>
+nnoremap <space>n :lprevious<CR>

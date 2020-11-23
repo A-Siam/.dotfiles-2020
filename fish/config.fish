@@ -6,8 +6,8 @@ set -x CM_HISTLENGTH 20
 set -x CM_SELECTIONS "clipboard primary"
 set -x WINEPREFIX ~/win32
 
-set -x BROWSER chromium
-set -x TERMINAL urxvt
+set -x BROWSER chrome
+set -x TERMINAL alacritty
 set -x TERM xterm-256color
 set -x FILEEXP ranger
 set -x EDITOR vim
@@ -43,6 +43,9 @@ alias sf="~/.scripts/sf"
 alias ga="git add -A"
 alias gc="git commit"
 alias gp="git push"
+alias pys="python -m http.server"
+alias gpp="cd ~/programming_playground"
+alias v="vim"
 
 # oracle xe env vars
 set -x ORACLE_HOME /opt/oracle/product/18c/dbhomeXE
@@ -60,4 +63,8 @@ end
 set PATH /home/asiam/.local/bin $PATH
 fish_vi_key_bindings
 
-echo "use sql cl"
+echo "-------------------------TODO------------------------"
+echo "#ALGO TODO LIST"
+echo "[ ] make a unified interface for all algorithms"
+echo "[ ] make a presentation"
+echo "-----------------------------------------------------"

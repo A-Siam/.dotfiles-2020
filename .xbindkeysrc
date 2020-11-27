@@ -42,7 +42,7 @@ Mod2 + XF86AudioMute
 "./.scripts/dmenu-msoffice"
     Mod4 + o
 
-"$BROWSER https://https://github.com/"
+"$BROWSER https://github.com/"
     Mod4+Alt+g
 
 "$BROWSER https://drive.google.com/drive/u/0/folders/1RqZoC7_pNArcAoXe1yn0MNruEve_kGlJ"
@@ -113,7 +113,7 @@ Mod2 + XF86AudioMute
     Shift + Print
 
 "$HOME/.scripts/ocr_screenshot"
-    Mod4 + Shift + Print
+    Mod4 + Shift + y
 
 "$HOME/.scripts/ocr_screenshot_google"
     Mod4 + Shift + slash
@@ -121,7 +121,7 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e sh -c "$HOME/.scripts/fzf-fm /run/media/$USER""
     Mod4+alt+0
 
-"$HOME/.scripts/rofi-ytp"
+"$HOME/.scripts/clip-youtube-search"
     Alt+Mod2+Mod4 + apostrophe
 
 "$HOME/.scripts/rofi-wikipedia"
@@ -152,6 +152,9 @@ Mod2 + XF86AudioMute
     Mod4 + Shift + b
 
 # bspwm config
+
+"/home/$USER/.config/bspwm/bsp_settings"
+    Mod4 + Shift + R
 
 "bsp-layout remove"
     Mod4 + shift + y

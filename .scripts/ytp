@@ -7,13 +7,14 @@
 ## https://gitlab.com/uoou/ytp
 ## GPL v. 2
 
-api_key="your key"
+api_key="AIzaSyCp2Ti983dYCiTYRunqefn68ttxL1vEAB4"
 # These API keys have limits. If the script inexplicably fails
 # create your own here: https://console.developers.google.com/
 # following these instructions: https://www.slickremix.com/docs/get-api-key-for-youtube/
 
 maxresults=10
 player="mpv" # mpv works, try other players at your own P E R I L
+ytdl_format=22
 
 magenta="\033[35;1m"
 cyan="\033[36;1m"
@@ -279,7 +280,7 @@ handle_input () {
 			;;
 		w )
 			echo -e "Opening ${red}$vidtitle${nc} in $player"
-			$player $video_url$vidid 1>/dev/null 2>&1 &
+			$player $video_url$vidid --ytdl-format=$ytdl_format 1>/dev/null 2>&1 &
 			command_line
 			;;
 		u )
@@ -297,7 +298,7 @@ handle_input () {
 			;;
 		t )
 			if [[ ! -z $playlistfile ]]; then
-				$player $playlistfile 1>/dev/null 2>&1 &
+				$player $playlistfile --ytdl-format=$ytdl_format 1>/dev/null 2>&1 &
 				echo "Opening playlist in $player"
 				command_line
 			else

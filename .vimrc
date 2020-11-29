@@ -1,4 +1,3 @@
-
 " An example for a vimrc file.
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
@@ -62,8 +61,11 @@ set expandtab
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
 Plug 'preservim/nerdtree'
 Plug 'ayu-theme/ayu-vim'
+Plug 'dracula/vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'ryanoasis/vim-devicons'
@@ -104,9 +106,10 @@ set encoding=UTF-8
 
 " love the ayu theme but i really hate how unnoticeable the line number is so...
 " NOTE: guifg because i use a gui terminal color YMMD
-highlight LineNr guifg=#649649
+highlight LineNr guifg=#649649 
 
-color ayu
+
+color dracula
 set termguicolors
 
 nmap <c-h> :vertical resize -5<CR>
@@ -178,7 +181,7 @@ nmap <F2> <Plug>(coc-rename)
 set updatetime=300
 
 let g:NERDTreeChDirMode = 2
-let g:airline_theme='ayu_dark'
+let g:airline_theme='dracula'
 
 let g:airline_symbols = {}
 
@@ -245,3 +248,12 @@ nnoremap <space>t :term<CR>
 nnoremap <F3> :lvimgrep 
 nnoremap <space>m :lnext<CR>
 nnoremap <space>n :lprevious<CR>
+nmap <C-P> :Prettier<CR>
+
+hi Normal ctermbg=none
+hi CursorLine guibg=#222222
+ 
+let g:session_autoload = 'yes'
+let g:session_autosave = 'yes'
+let g:session_autosave_to = 'default'
+let g:session_verbose_messages = 0

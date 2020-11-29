@@ -63,3 +63,8 @@ end
 set PATH /home/asiam/.local/bin $PATH
 fish_vi_key_bindings
 
+echo "-------------------------TODO------------------------"
+echo "#ALGO TODO LIST"
+echo "[ ] make a unified interface for all algorithms"
+echo "[ ] make a presentation"
+echo "-----------------------------------------------------"

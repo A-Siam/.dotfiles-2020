@@ -9,7 +9,7 @@
     Mod4 + b
 
 "~/.scripts/dmenu-scripts"
-    Mod4 + s
+    Mod4 + Shift + s
 
 "$TERMINAL"
     Mod4 + Return
@@ -51,11 +51,14 @@ Mod2 + XF86AudioMute
 "$HOME/.scripts/dmenu-simple-mtpfs"
     Alt+Mod4+m
 
-"alacritty --class "scratch" -d 80 25"
-    Alt+Mod4+s
+"$HOME/.scripts/dmenu-astudy"
+    Mod4 + s
 
-"$TERMINAL -e sh -c "geek-life""
-	Alt+Mod4+t
+"$HOME/.scripts/dmenu-study"
+    Alt + Mod4 + s
+
+"alacritty --class "scratch" -d 80 25"
+    Alt + Mod4 + f
 
 "code"
     Mod4 + c
@@ -157,10 +160,10 @@ Mod2 + XF86AudioMute
     Mod4 + Shift + R
 
 "bsp-layout remove"
-    Mod4 + shift + y
+    Mod4 + alt + 8
 
 "bsp-layout set tall -- --master-size 0.5"
-    Mod4 + y
+    Mod4 + alt + 9
 
 "bspc node -z left -50 0 || bspc node -z right -50 0"
     Mod4 + alt + h

@@ -219,7 +219,6 @@ autocmd FileType nerdtree setlocal relativenumber
 
 let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
 
-set mouse=nvcr
 set spell
 set ignorecase
 set smartcase
@@ -243,7 +242,7 @@ hi Normal guibg=NONE ctermbg=NONE
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
-nnoremap <F3> :lvimgrep 
+nnoremap <F3> :vim
 nnoremap <space>m :lnext<CR>
 nnoremap <space>n :lprevious<CR>
 nmap <C-P> :Prettier<CR>
@@ -265,3 +264,8 @@ nmap <space>gj :diffget //3<CR>
 nmap <space>gf :diffget //2<CR>
 nmap <space><space>g :G<CR>
 set diffopt+=vertical
+" always mouse support 
+set term=xterm-256color
+" organize mouse
+set mouse=nvcr
+

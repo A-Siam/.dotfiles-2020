@@ -248,7 +248,7 @@ nnoremap <space>n :lprevious<CR>
 nmap <C-P> :Prettier<CR>
 
 hi Normal ctermbg=none
-hi CursorLine guibg=#444750
+hi CursorLine guibg=#443350
  
 let g:session_autoload = 'yes'
 let g:session_autosave = 'yes'

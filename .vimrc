@@ -61,6 +61,7 @@ set expandtab
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'tpope/vim-fugitive'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 Plug 'preservim/nerdtree'
@@ -242,9 +243,6 @@ hi Normal guibg=NONE ctermbg=NONE
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
-set splitbelow
-nnoremap <space>t :term<CR>
-
 nnoremap <F3> :lvimgrep 
 nnoremap <space>m :lnext<CR>
 nnoremap <space>n :lprevious<CR>
@@ -257,3 +255,9 @@ let g:session_autoload = 'yes'
 let g:session_autosave = 'yes'
 let g:session_autosave_to = 'default'
 let g:session_verbose_messages = 0
+
+" fugitive 
+nmap <space>gj :diffget //3<CR>
+nmap <space>gf :diffget //2<CR>
+nmap <space>gg :G 
+set diffopt+=vertical

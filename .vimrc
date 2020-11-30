@@ -249,15 +249,19 @@ nnoremap <space>n :lprevious<CR>
 nmap <C-P> :Prettier<CR>
 
 hi Normal ctermbg=none
-hi CursorLine guibg=#222222
+hi CursorLine guibg=#444750
  
 let g:session_autoload = 'yes'
 let g:session_autosave = 'yes'
 let g:session_autosave_to = 'default'
 let g:session_verbose_messages = 0
 
+" embedded terminal
+set splitbelow
+nnoremap <space>t :term<CR>
+
 " fugitive 
 nmap <space>gj :diffget //3<CR>
 nmap <space>gf :diffget //2<CR>
-nmap <space>gg :G 
+nmap <space><space>g :G<CR>
 set diffopt+=vertical

@@ -24,7 +24,7 @@ bspc rule -a Peek state=floating
 bspc rule -a Magnus state=floating
 bspc rule -a Zathura state=tiled desktop='^4'
 bspc rule -a mpv state=tiled desktop='^5' follow=on
-bspc rule -a Microsoft Teams - Preview sticky=on
+bspc rule -a "Microsoft Teams - Preview" sticky=on
 bspc rule -a URxvt:scratch state=floating
 bspc rule -a Alacritty:scratch state=floating
 bspc rule -a libreoffice-impress desktop=^6 follow=on

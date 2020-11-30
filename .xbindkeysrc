@@ -40,7 +40,7 @@ Mod2 + XF86AudioMute
 # personal bindings
 #
 "$HOME/.scripts/dmenu-projects"
-    Mod4 + p
+    Mod4 + Shift + p
 
 "$TERMINAL -e  sh -c "vim""
     Mod4 + v

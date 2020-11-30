@@ -39,6 +39,12 @@ Mod2 + XF86AudioMute
 
 # personal bindings
 #
+"$HOME/.scripts/dmenu-projects"
+    Mod4 + p
+
+"$TERMINAL -e  sh -c "vim""
+    Mod4 + v
+
 "./.scripts/dmenu-msoffice"
     Mod4 + o
 

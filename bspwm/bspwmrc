@@ -3,7 +3,8 @@
 /home/$USER/.config/bspwm/bsp_settings
 
 # launch applications
-feh --bg-center  ~/Wallpapers/310923.jpg
+#feh --bg-center  ~/Wallpapers/310923.jpg
+feh --bg-fill ~/Wallpapers/arch.png
 
 $HOME/.config/polybar/launch.sh
 

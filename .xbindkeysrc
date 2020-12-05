@@ -133,7 +133,7 @@ Mod2 + XF86AudioMute
 "$HOME/.scripts/clip-youtube-search"
     Alt+Mod2+Mod4 + apostrophe
 
-"$HOME/.scripts/rofi-wikipedia"
+"$HOME/.scripts/clip-wikipedia"
 	Alt+Mod2+Mod4 + bracketright
 
 "$HOME/.scripts/dmenu-archwiki"
@@ -157,7 +157,7 @@ Mod2 + XF86AudioMute
 "playerctl next"
     XF86AudioNext
 
-"~/.scripts/rofi-bookseach"
+"~/.scripts/dmenu-booksearch"
     Mod4 + Shift + b
 
 # bspwm config
@@ -183,7 +183,7 @@ Mod2 + XF86AudioMute
 "bspc node -z top 0 -50 || bspc node -z bottom 0 -50"
     Mod4 + alt + k
 
-"rofi -show run"
+"dmenu_run -b -sf "#ffffff" -sb "#725E97" -nf "#ffffff" -nb "#1E1F29""
     Mod4+d
 
 "bspc node -n 'last.!automatic.local'"

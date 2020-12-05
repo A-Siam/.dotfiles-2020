@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+inp=`echo "" | dmenu -b -p "search a book"`
+if [[ $inp != "" ]]
+then
+    $BROWSER "https://www.pdfdrive.com/search?q=$inp" &
+    $BROWSER "http://libgen.rs/search.php?req=$inp" &
+    $BROWSER "https://b-ok.africa/s/$inp" &
+fi

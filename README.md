@@ -8,4 +8,4 @@ yay -S mpv-mpris nerd-fonts-roboto-mono polybar colorpicker siji-git simple-mtpf
 pip install pywal
 ```
 - replace asiam with your user name 
-<!--![screenshot](https://github.com/A-Siam/.dotfiles-2020/blob/master/screenshot.png?raw=true)-->
+![screenshot](https://github.com/A-Siam/.dotfiles-2020/blob/master/screenshot.png?raw=true)

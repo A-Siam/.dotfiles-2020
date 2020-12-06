@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-s=`echo -e "" | dmenu -p "Arch Wiki search" -b -sb "#1793D1" -sf "#000000" -nb "#000000" -nf "#1793D1"`
+s=`echo -e "" | dmenu -i -p "Arch Wiki search" -b -sb "#1793D1" -sf "#000000" -nb "#000000" -nf "#1793D1"`
 
 if [[ $s != "" ]] 
 then

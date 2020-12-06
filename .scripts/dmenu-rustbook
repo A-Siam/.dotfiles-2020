@@ -2,7 +2,7 @@
 
 cd ~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc/rust/html/book
 
-s=`ls ch*.html | dmenu -l 10 -p "The Rust Book" -b -sb "#000000" -sf "#C8402A" -nb "#C8402A" -nf "#000000"`
+s=`ls ch*.html | dmenu -i -l 10 -p "The Rust Book" -b -sb "#000000" -sf "#C8402A" -nb "#C8402A" -nf "#000000"`
 
 if [[ $s != "" ]] 
 then

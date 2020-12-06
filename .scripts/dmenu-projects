@@ -4,7 +4,7 @@ p="/run/media/asiam/MyProjects"
 echo $p
 cd $p
 
-s=`ls -d */| dmenu -l 10 -p "My Projects" -b -sb "#aaaa54" -sf "#0f3314" -nb "#0f3314" -nf "#aaaa54"`
+s=`ls -d */| dmenu -i -l 10 -p "My Projects" -b -sb "#aaaa54" -sf "#0f3314" -nb "#0f3314" -nf "#aaaa54"`
 
 if [[ $s != "" ]] 
 then

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-choise=`echo -e "word\npowerpoint\nexcel\nphotoshop" | dmenu -sb "#a062aa" -nb "#000011" -b`
+choise=`echo -e "word\npowerpoint\nexcel\nphotoshop" | dmenu -i -sb "#a062aa" -nb "#000011" -b`
 if [[ $choise == "word" ]] 
 then
     wine ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/WINWORD.EXE
@@ -14,5 +14,5 @@ then
     cd "/run/media/asiam/MyFiles/Software/WindowsSoftwares/Adobe Photoshop CS5 ME Portable/Adobe Photoshop CS5 ME Portable"
     wine Adobe\ Photoshop\ CS5\ ME\ Portable.exe
 else 
-    echo "dmenu-msoffice: no correct choise selected"
+    echo "dmenu -i-msoffice: no correct choise selected"
 fi

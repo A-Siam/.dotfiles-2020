@@ -2,7 +2,7 @@
 
 cd /run/media/asiam/MyFiles/CSE_Acad/4th\ year
 
-s=`ls -d */| dmenu -l 10 -p "Academic Studying" -b -sb "#00B454" -sf "#0A0E14" -nb "#0A0E14" -nf "#00B454"`
+s=`ls -d */| dmenu -i -l 10 -p "Academic Studying" -b -sb "#00B454" -sf "#0A0E14" -nb "#0A0E14" -nf "#00B454"`
 
 if [[ $s != "" ]] 
 then

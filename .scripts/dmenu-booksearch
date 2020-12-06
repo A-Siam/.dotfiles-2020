@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-inp=`echo "" | dmenu -b -p "search a book"`
+inp=`echo "" | dmenu -i -b -p "search a book"`
 if [[ $inp != "" ]]
 then
     $BROWSER "https://www.pdfdrive.com/search?q=$inp" &

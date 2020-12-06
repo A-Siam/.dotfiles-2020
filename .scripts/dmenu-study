@@ -2,7 +2,7 @@
 
 cd /run/media/asiam/MyFiles/CSE_selfstudy
 
-s=`ls -d */| dmenu -l 10 -p "Self Studing" -b -sb "#77B454" -sf "#0A0E14" -nb "#0A0E14" -nf "#77B454"`
+s=`ls -d */| dmenu -i -l 10 -p "Self Studing" -b -sb "#77B454" -sf "#0A0E14" -nb "#0A0E14" -nf "#77B454"`
 
 if [[ $s != "" ]] 
 then

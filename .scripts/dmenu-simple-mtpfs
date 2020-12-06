@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-s=`simple-mtpfs -l | dmenu -p "Select your phone" -b -sb "#00aa00" -sf "#000000" -nb "#000000" -nf "#00aa00"`
+s=`simple-mtpfs -l | dmenu -i -p "Select your phone" -b -sb "#00aa00" -sf "#000000" -nb "#000000" -nf "#00aa00"`
 
 id=`~/.scripts/get_cell_id $s`
 

@@ -61,11 +61,12 @@ set expandtab
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'junegunn/goyo.vim'
+Plug 'udalov/kotlin-vim'
+Plug 'nikvdp/ejs-syntax'
 Plug 'tpope/vim-fugitive'
 Plug 'xolox/vim-misc'
-Plug 'xolox/vim-session'
 Plug 'preservim/nerdtree'
-Plug 'ayu-theme/ayu-vim'
 Plug 'dracula/vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -93,6 +94,8 @@ Plug 'Dimercel/todo-vim'
 Plug 'grvcoelho/vim-javascript-snippets'
 Plug 'morhetz/gruvbox'
 Plug 'tell-k/vim-autopep8'
+Plug 'mattn/emmet-vim'
+
 
 call plug#end()
 
@@ -250,11 +253,6 @@ nmap <C-P> :Prettier<CR>
 hi Normal ctermbg=none
 hi CursorLine guibg=#443350
  
-let g:session_autoload = 'yes'
-let g:session_autosave = 'yes'
-let g:session_autosave_to = 'default'
-let g:session_verbose_messages = 0
-
 " embedded terminal
 set splitbelow
 nnoremap <space>t :term<CR>
@@ -268,4 +266,14 @@ set diffopt+=vertical
 set term=xterm-256color
 " organize mouse
 set mouse=nvcr
+set background=dark
 
+nmap <space><C-m> <Plug>(coc-diagnostic-next)
+nmap <space><C-n> <Plug>(coc-diagnostic-prev)
+
+" emmet config
+let g:user_emmet_mode='in'    
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,jsx,ejs EmmetInstall
+
+nmap <space><space>z :Goyo <bar> set number <bar> set rnu <CR>

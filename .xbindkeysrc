@@ -118,6 +118,9 @@ Mod2 + XF86AudioMute
 "$HOME/.scripts/screenshot"
     Print
 
+"import png:- | xclip -selection c -t image/png "
+    Mod4 + alt + Print
+
 "$HOME/.scripts/root-screenshot"
     Shift + Print
 

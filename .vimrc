@@ -277,3 +277,5 @@ let g:user_emmet_install_global = 0
 autocmd FileType html,css,jsx,ejs EmmetInstall
 
 nmap <space><space>z :Goyo <bar> set number <bar> set rnu <CR>
+nmap <space><space>n :noh<CR>
+nmap <space><space>q :wa<CR>:q<CR>

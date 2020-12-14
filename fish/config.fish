@@ -6,8 +6,8 @@ set -x CM_HISTLENGTH 20
 set -x CM_SELECTIONS "clipboard primary"
 set -x WINEPREFIX ~/win32
 
-set -x BROWSER chrome
-set -x TERMINAL alacritty
+set -x BROWSER firefox
+set -x TERMINAL urxvt
 set -x TERM xterm-256color
 set -x FILEEXP ranger
 set -x EDITOR vim

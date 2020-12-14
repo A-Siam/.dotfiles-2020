@@ -12,13 +12,14 @@ URxvt.matcher.pattern.1:  \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
 
 ! Appearance
 
-URxvt*font:             xft: Cousine Nerd Font Mono:style=Regular:pixelsize=14
+URxvt*font:             xft:  Cousine for Powerline:style=Regular:pixelsize=14, xft:   Cousine Nerd Font Mono:style=Regular :pixelsize=14
+
 URxvt*termName:         rxvt-256color
 URxvt*scrollBar:        false
-URxvt*internalBorder:   10
-URxvt*letterSpace: 1
-URxvt*lineSpace: 1
-:wq
+URxvt*internalBorder:   8
+URxvt*letterSpace: 0
+URxvt*lineSpace: 0
+!
 ! Special
 
 ! Dracula Xresources palette

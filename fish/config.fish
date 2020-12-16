@@ -11,6 +11,7 @@ set -x TERMINAL alacritty
 set -x TERM xterm-256color
 set -x FILEEXP ranger
 set -x EDITOR vim
+set -x npm_config_prefix $HOME/.node_modules
 
 # aliases
 alias gof="cd ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/"
@@ -46,10 +47,13 @@ alias pys="python -m http.server"
 alias gpp="cd ~/programming_playground"
 alias v="vim"
 
+
 # oracle xe env vars
 set -x ORACLE_HOME /opt/oracle/product/18c/dbhomeXE
 set -x ORACLE_SID XE
-set -x PATH $PATH:$ORACLE_HOME/bin:$HOME/bin:$HOME/.cargo/bin
+
+# general path
+set -x PATH $PATH:$ORACLE_HOME/bin:$HOME/bin:$HOME/.cargo/bin:$HOME/.node_modules/bin
 
 function conda_init;
 # >>> conda initialize >>>

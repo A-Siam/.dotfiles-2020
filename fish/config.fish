@@ -7,12 +7,11 @@ set -x CM_SELECTIONS "clipboard primary"
 set -x WINEPREFIX ~/win32
 
 set -x BROWSER firefox
-set -x TERMINAL urxvt
+set -x TERMINAL alacritty
 set -x TERM xterm-256color
 set -x FILEEXP ranger
 set -x EDITOR vim
 
-set -x SQLPLUS_BIN (which sqlplus)
 # aliases
 alias gof="cd ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/"
 alias word="cd ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/ && wine WINWORD.EXE"
@@ -50,7 +49,7 @@ alias v="vim"
 # oracle xe env vars
 set -x ORACLE_HOME /opt/oracle/product/18c/dbhomeXE
 set -x ORACLE_SID XE
-set -x PATH $PATH:$ORACLE_HOME/bin:$HOME/bin
+set -x PATH $PATH:$ORACLE_HOME/bin:$HOME/bin:$HOME/.cargo/bin
 
 function conda_init;
 # >>> conda initialize >>>
@@ -62,4 +61,3 @@ end
 # add normal python binaries to our path
 set PATH /home/asiam/.local/bin $PATH
 fish_vi_key_bindings
-

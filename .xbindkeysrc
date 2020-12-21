@@ -1,4 +1,4 @@
-# General system config
+# System config
 "inkscape"
     Mod4 + i
 
@@ -63,7 +63,7 @@ Mod2 + XF86AudioMute
 "$HOME/.scripts/dmenu-study"
     Alt + Mod4 + s
 
-"alacritty --class "scratch" -d 80 25"
+"alacritty --class "scratch" -d 80 25 -e python"
     Alt + Mod4 + f
 
 "code"
@@ -93,23 +93,23 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e  sh -c "vim $HOME/.config/fish/config.fish""
     Mod4 + alt +z
 
-"$TERMINAL -e sh -c "vim /home/asiam/.xbindkeysrc"" # configure bindings
+"$TERMINAL -e sh -c "vim /home/$USER/.xbindkeysrc"" # configure bindings
 	Mod4+ Alt + b
 
-"$TERMINAL -e sh -c  "vim /home/asiam/.xinitrc"" 
+"$TERMINAL -e sh -c  "vim /home/$USER/.xinitrc"" 
 	Mod4+ Alt + i
 
-"$TERMINAL -e sh -c "vim /home/asiam/.config/bspwm/bspwmrc"" # configure bindings
+"$TERMINAL -e sh -c "vim /home/$USER/.config/bspwm/bsp_settings"" # configure bindings
 	Mod4+ Alt + w
 
-"$TERMINAL -e sh -c "vim /home/asiam/.vimrc"" # configure bindings
+"$TERMINAL -e sh -c "vim /home/$USER/.vimrc"" # configure bindings
 	Mod4+ Alt + v
 
 
 "$TERMINAL -e sh -c $FILEEXP"
 	Mod4 + f
 
-"pcmanfm"
+"nautilus"
 	Mod4 + Shift + f
 
 "$TERMINAL -e sh -c "htop""
@@ -186,7 +186,7 @@ Mod2 + XF86AudioMute
 "bspc node -z top 0 -50 || bspc node -z bottom 0 -50"
     Mod4 + alt + k
 
-"dmenu_run -b -sf "#ffffff" -sb "#725E97" -nf "#ffffff" -nb "#1E1F29""
+"dmenu_run -b -i"
     Mod4+d
 
 "bspc node -n 'last.!automatic.local'"
@@ -292,5 +292,3 @@ Mod2 + XF86AudioMute
 
 "bspc node -t floating"
     Mod2+Mod4 +Shift + bracketleft
-
-

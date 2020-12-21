@@ -139,8 +139,17 @@ Mod2 + XF86AudioMute
 "$HOME/.scripts/clip-wikipedia"
 	Alt+Mod2+Mod4 + bracketright
 
-"$HOME/.scripts/dmenu-archwiki"
-	Alt+Mod2+Mod4 + period
+"$HOME/.scripts/dmenu-google"
+	Alt + Mod2 + Mod4 + period
+
+"$HOME/.scripts/dmenu-youtube"
+	Alt + Mod4 + semicolon
+
+"$HOME/.scripts/dmenu-wikipedia"
+	Alt + Mod4 + bracketleft
+
+"$HOME/.scripts/dmenu-youtube"
+	Alt + Mod4 + semicolon
 
 "xinput --disable 10"
     Mod4 + Shift + t

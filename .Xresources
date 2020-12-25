@@ -12,35 +12,37 @@ URxvt.matcher.pattern.1:  \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
 
 ! Appearance
 
-URxvt*font:             xft:  Cousine for Powerline:style=Regular:pixelsize=14, xft:   Cousine Nerd Font Mono:style=Regular :pixelsize=14
+URxvt*font:             xft:  Hack:style=Regular:pixelsize=14, xft:   Cousine Nerd Font Mono:style=Regular :pixelsize=14
 
 URxvt*termName:         rxvt-256color
 URxvt*scrollBar:        false
 URxvt*internalBorder:   8
-URxvt*letterSpace: 0
+URxvt*letterSpace: -1
 URxvt*lineSpace: 0
 !
 ! Special
 
-! Dracula Xresources palette
-*.foreground: #F8F8F2
-*.background: #282A36
-*.color0:     #000000
-*.color8:     #4D4D4D
-*.color1:     #FF5555
-*.color9:     #FF6E67
-*.color2:     #50FA7B
-*.color10:    #5AF78E
-*.color3:     #F1FA8C
-*.color11:    #F4F99D
-*.color4:     #BD93F9
-*.color12:    #CAA9FA
-*.color5:     #FF79C6
-*.color13:    #FF92D0
-*.color6:     #8BE9FD
-*.color14:    #9AEDFE
-*.color7:     #BFBFBF
-*.color15:    #E6E6E6
+! COOLORS
+*background:   #282a36
+*foreground:   #eff0eb
+*cursorColor:  #9aedfe
+
+*color0:      #33303b
+*color8:      #4f4b58
+*color1:      #ff5c57
+*color9:      #ff5c57
+*color2:      #218921
+*color10:     #5af78e
+*color3:      #f3f99d
+*color11:     #f3f99d
+*color4:      #57c7ff
+*color12:     #57c7ff
+*color5:      #ff6ac1
+*color13:     #ff6ac1
+*color6:      #9aedfe
+*color14:     #9aedfe
+*color7:      #eff0eb
+*color15:     #eff0eb
 
 URxvt.perl-ext-common: default,resize-font
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard

@@ -1,20 +1,33 @@
 // Place your key bindings in this file to override the defaultsauto[
 [
-    {
-        "key": "ctrl+j ctrl+h",
-        "command": "workbench.action.toggleActivityBarVisibility"
-    },
-    {
-        "key": "ctrl+shift+v",
-        "command": "editor.action.clipboardPasteAction"
-    },
-    {
-        "key": "ctrl+v",
-        "command": "-editor.action.clipboardPasteAction"
-    },
-    {
-        "key": "ctrl+shift+v",
-        "command": "-editor.action.clipboardPasteAction",
-        "when": "vim.mode == 'Normal'"
-    }    
+  {
+    "key": "ctrl+j ctrl+h",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "editor.action.clipboardPasteAction"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "-editor.action.clipboardPasteAction"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-editor.action.clipboardPasteAction",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+alt+s",
+    "command": "saveAll",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+j ctrl+j",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "ctrl+t ctrl+t",
+    "command": "workbench.action.toggleTabsVisibility"
+  }
 ]

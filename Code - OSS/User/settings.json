@@ -1,13 +1,12 @@
 {
   "editor.fontFamily": "'Hack','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.lineNumbers": "relative",
-  "workbench.colorTheme": "Ayu Mojave",
   "window.titleBarStyle": "native",
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": true,
   "editor.parameterHints.enabled": false,
-  "workbench.iconTheme": "vscode-icons",
-  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.visible": false,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -31,8 +30,43 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.activityBar.visible": true,
   "window.menuBarVisibility": "toggle",
-  "workbench.editor.showTabs": true,
+  "workbench.editor.showTabs": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7Ym9vdHN0cmFwXCIsXCJjdXN0b21MaWJyYXJpZXNcIjpbXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltcIjRGNEY0RlwiLFwiMDAwMDAwXCIsXCJGRkNDRTZcIixcIkZGRkZGRlwiXSxcImZvcm1hdFdpZHRoXCI6MCxcImNyZWF0ZVRhcmdldFwiOmZhbHNlLFwicGFnZUZvcm1hdFwiOntcInhcIjowLFwieVwiOjAsXCJ3aWR0aFwiOjg1MCxcImhlaWdodFwiOjExMDB9LFwic2VhcmNoXCI6dHJ1ZSxcInNob3dTdGFydFNjcmVlblwiOnRydWUsXCJncmlkQ29sb3JcIjpcIiNkMGQwZDBcIixcImRhcmtHcmlkQ29sb3JcIjpcIiM2ZTZlNmVcIixcImF1dG9zYXZlXCI6dHJ1ZSxcInJlc2l6ZUltYWdlc1wiOm51bGwsXCJvcGVuQ291bnRlclwiOjAsXCJ2ZXJzaW9uXCI6MTgsXCJ1bml0XCI6MSxcImlzUnVsZXJPblwiOmZhbHNlLFwidWlcIjpcIlwifSJ9",
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "hediet.vscode-drawio.theme": "atlas",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 0,
+  "oracledevtools.bookmarkFileFolder": "/home/a/Oracle/oracle.oracledevtools",
+  "oracledevtools.connectionConfiguration.configFilesFolder": "/home/a/Oracle/network/admin",
+  "oracledevtools.connectionConfiguration.walletFileFolder": "/home/a/Oracle/network/admin",
+  "oracledevtools.connections": [
+    {
+      "authenticationType": 2,
+      "dBAPrivilege": "None",
+      "userID": "HR",
+      "passwordSaved": true,
+      "password": "hr",
+      "dataSource": "localhost:1521/xe",
+      "connectionType": 2,
+      "databaseHostName": "localhost",
+      "databasePortNumber": "1521",
+      "databaseServiceName": "xe",
+      "name": "HR.xe",
+      "currentSchema": "",
+      "tnsAdmin": "/home/a/Oracle/network/admin"
+    }
+  ],
+  "terminal.integrated.shell.linux": "/usr/bin/fish",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }

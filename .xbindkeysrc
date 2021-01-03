@@ -63,8 +63,11 @@ Mod2 + XF86AudioMute
 "$HOME/.scripts/dmenu-study"
     Alt + Mod4 + s
 
-"alacritty --class "scratch" -d 80 25 -e python"
-    Alt + Mod4 + f
+# "$TERMINAL --class "scratch" -d 80 25 -e python"
+#    Alt + Mod4 + f
+#
+"$TERMINAL -name "scratch" -e python"
+   Alt + Mod4 + f
 
 "code"
     Mod4 + c
@@ -109,7 +112,7 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e sh -c $FILEEXP"
 	Mod4 + f
 
-"nautilus"
+"pcmanfm"
 	Mod4 + Shift + f
 
 "$TERMINAL -e sh -c "htop""
@@ -301,3 +304,6 @@ Mod2 + XF86AudioMute
 
 "bspc node -t floating"
     Mod2+Mod4 +Shift + bracketleft
+
+"$HOME/.scripts/firfox_here"
+		Mod4 + Shift + W

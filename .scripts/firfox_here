@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+# simple script that move firfox window to the current desktop
+
+bspc node $(xdo id -N firefox | head -n 1).normal --to-desktop focused
+

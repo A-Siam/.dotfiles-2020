@@ -20,7 +20,7 @@ URxvt*lineSpace: 0
 ! COOLORS
 *background:   #000000
 *foreground:   #eff0eb
-*cursorColor:  #4466bb
+*cursorColor:  #dddddd
 
 *color0:      #333333
 *color8:      #AAAAAA

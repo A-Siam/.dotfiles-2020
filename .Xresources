@@ -1,8 +1,3 @@
-!
-! Ayu Dark
-!   Dark version with Mirage as colors 8-15
-!
-
 ! Options
 
 URxvt.perl-ext:           default,matcher,selection-to-clipboard
@@ -23,12 +18,12 @@ URxvt*lineSpace: 0
 ! Special
 
 ! COOLORS
-*background:   #282a36
+*background:   #000000
 *foreground:   #eff0eb
-*cursorColor:  #9aedfe
+*cursorColor:  #4466bb
 
-*color0:      #33303b
-*color8:      #4f4b58
+*color0:      #333333
+*color8:      #AAAAAA
 *color1:      #ff5c57
 *color9:      #ff5c57
 *color2:      #218921
@@ -39,7 +34,7 @@ URxvt*lineSpace: 0
 *color12:     #57c7ff
 *color5:      #ff6ac1
 *color13:     #ff6ac1
-*color6:      #9aedfe
+*color6:      #666666
 *color14:     #9aedfe
 *color7:      #eff0eb
 *color15:     #eff0eb

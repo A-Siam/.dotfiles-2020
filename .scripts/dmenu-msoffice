@@ -11,7 +11,7 @@ then
     wine ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/EXCEL.EXE
 elif [[ $choise == "photoshop" ]]
 then
-    cd "/run/media/asiam/MyFiles/Software/WindowsSoftwares/Adobe Photoshop CS5 ME Portable/Adobe Photoshop CS5 ME Portable"
+    cd "/run/media/$USER/MyFiles/Software/WindowsSoftwares/Adobe Photoshop CS5 ME Portable/Adobe Photoshop CS5 ME Portable"
     wine Adobe\ Photoshop\ CS5\ ME\ Portable.exe
 else 
     echo "dmenu -i-msoffice: no correct choise selected"

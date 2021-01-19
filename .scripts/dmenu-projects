@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-p="/run/media/asiam/MyProjects"
+p="/run/media/$USER/MyProjects"
 echo $p
 cd $p
 
@@ -9,5 +9,5 @@ s=`ls -d */| dmenu -i -l 10 -p "My Projects" -b -sb "#aaaa54" -sf "#0f3314" -nb 
 if [[ $s != "" ]] 
 then
     cd $p/$s
-    $TERMINAL -e sh -c $FILEEXP 
+    $TERMINAL 
 fi

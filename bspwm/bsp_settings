@@ -1,9 +1,9 @@
 #! /bin/sh
 
 bspc monitor eDP1 -d 1 2 3 4 5 6 7 8 9
-bspc config click_to_focus
+bspc config focus_follows_pointer true
 
-bspc config border_width         3
+bspc config border_width         1
 bspc config window_gap          5
 
 bspc config split_ratio          0.50
@@ -11,7 +11,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc config normal_border_color "#444444"
-bspc config focused_border_color "#8B69BE"
+bspc config focused_border_color "#aaaaaa"
 
 # bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a firefox desktop='^2' follow=on
@@ -20,12 +20,16 @@ bspc rule -a Google-chrome desktop='^2' follow=on
 bspc rule -a Chromium desktop='^2' follow=on
 bspc rule -a qutebrowser desktop='^2' follow=on
 bspc rule -a Code desktop='^3'
+bspc rule -a VSCodium desktop='^3'
 bspc rule -a Inkscape desktop='^1'
 bspc rule -a Peek state=floating
+bspc rule -a jetbrains-studio state=floating
 bspc rule -a Magnus state=floating
 bspc rule -a Zathura state=tiled desktop='^4'
 bspc rule -a mpv state=tiled desktop='^5' follow=on
 bspc rule -a Microsoft Teams - Preview sticky=on
 bspc rule -a URxvt:scratch state=floating
+bspc rule -a powerpnt.exe state=floating
 bspc rule -a Alacritty:scratch state=floating
 bspc rule -a libreoffice-impress desktop=^6 follow=on
+

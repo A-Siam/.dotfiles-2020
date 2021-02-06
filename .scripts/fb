@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+wd=$($SCRIPTS_DIR/fasb.py $1)
+echo "wd: $wd"
+cd $wd

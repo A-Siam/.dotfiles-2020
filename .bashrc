@@ -1,0 +1,53 @@
+# aliases
+alias ch="code . -r"
+alias gof="cd ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/"
+alias word="cd ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/ && wine WINWORD.EXE"
+alias powerpoint="cd ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/ && wine POWERPNT.EXE"
+alias jn="condaInit && jupyter notebook"
+alias si="sudo pacman -S"
+alias sup="sudo pacman -Syu"
+alias gfp="cd /run/media/$USER/MyProjects/flask_setup"
+alias ss="pacman -Ss"
+alias t="$TERMINAL -e sh -c 'bash' &"
+alias gmm="cd /run/media/$USER/MyFiles/Music"
+alias gma="cd /run/media/$USER/MyFiles/CSE_Acad"
+alias gms="cd /run/media/$USER/MyFiles/CSE_selfstudy"
+alias yi="yay -S"
+alias gmp="cd /run/media/$USER/MyProjects"
+alias srm="sudo pacman -Runs"
+alias grb="cd /home/a/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc/rust/html/book"
+alias gmf="cd /run/media/a/MyFiles"
+alias gmc="cd /run/media/a"
+alias p="python"
+alias gss="cd /run/media/a/MyProjects/Server-side"
+alias gmfsnd="cd /run/media/a/MyProjects/_MyFSND"
+alias ss="sudo su"
+alias ll="ls -l"
+alias jn="conda_init && jupyter notebook"
+alias cr="cd /run/media/asiam/MyFiles/conf/"
+alias sf="~/.scripts/sf"
+alias ga="git add -A"
+alias gc="git commit"
+alias gp="git push"
+alias pys="python -m http.server"
+alias gpp="cd ~/programming_playground"
+alias v="vim"
+alias cr="cargo run"
+alias ns="ng serve --open"
+alias gpp="cd $HOME/programming_playground"
+
+export CM_DEBU=1
+export CM_MAX_CLIPS=100
+export CM_HISTLENGTH=20
+export CM_SELECTIONS="clipboard primary"
+export WINEARCH=win32
+export WINEPREFIX=~/win32
+
+export BROWSER=firefox
+export TERMINAL=urxvt
+export TERM=xterm-256color
+export FILEEXP=ranger
+export EDITOR=vim
+export npm_config_prefix=$HOME/.node_modules
+
+export PATH="$PATH:$HOME/.node_modules/bin:$HOME/.local/bin"

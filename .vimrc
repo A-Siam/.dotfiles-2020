@@ -41,12 +41,11 @@ nmap <space><space>d <Plug>(fern-action-remove)
 set nocp
 filetype plugin on
 nmap <Tab> :Fern . -drawer -toggle<CR>
-nmap <c-p> :FZF<CR>
+nmap <c-p> :call fzf#run({'source': 'git ls-files --exclude-standard --others --cached'})<CR>
 " tab size to 2 spaces
 set tabstop=2 " set display width of tab; 1 tab = x space with
 set autoindent " auto indent; new line with number of space at the beginning same as previous
 set shiftwidth=2 " number of space append to lines when type >> 
 
-" vim prettier 
 vmap <leader>f <Plug>(coc-format-selected)
 nmap <leader>f :Prettier<CR>

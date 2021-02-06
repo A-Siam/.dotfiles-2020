@@ -10,6 +10,8 @@ Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 Plug 'junegunn/fzf.vim'
 Plug 'dag/vim-fish'
 Plug 'tpope/vim-surround'
+Plug 'ayu-theme/ayu-vim' 
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
@@ -28,16 +30,18 @@ augroup END
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " my config
+set termguicolors
 set term=xterm-256color
-color elflord
+let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
 set number 
 set rnu
 set mouse=nv
 nmap <space><space>b :echo gitbranch#name()<CR>
 nmap <space><space>w :wa<CR>
 nmap <space><space>g :!git-cola<CR>
-nmap <space><space>d <Plug>(fern-action-remove)
-
+" nmap D <Plug>(fern-action-remove)
+set spell
 set nocp
 filetype plugin on
 nmap <Tab> :Fern . -drawer -toggle<CR>
@@ -49,3 +53,9 @@ set shiftwidth=2 " number of space append to lines when type >>
 
 vmap <leader>f <Plug>(coc-format-selected)
 nmap <leader>f :Prettier<CR>
+hi Normal guibg=NONE ctermbg=NONE
+hi LineNr guifg=#7D7F91
+
+set hlsearch
+set ignorecase
+set smartcase

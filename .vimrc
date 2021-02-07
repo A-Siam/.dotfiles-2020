@@ -132,4 +132,8 @@ set cursorline
 set spell
 set noshowmode
 
-nmap tt :set mouse=nv<CR>
+nmap te :set mouse=nv<CR>
+nmap td :set mouse=<CR>
+
+:nnoremap <c-p> :bnext<CR>
+:nnoremap <c-o> :bprevious<CR>

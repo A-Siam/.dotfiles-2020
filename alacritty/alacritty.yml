@@ -6,7 +6,7 @@ font:
   normal:
     family: CaskaydiaCove NF
   size: 10.5
-#window:
-#  padding:
-#    x: 10
-#    y : 12
+window:
+  padding:
+    x: 5
+    y: 5

@@ -1,59 +1,12 @@
-colors:
-  # Default colors
+colors: 
   primary:
-    background: '#282a36'
-    foreground: '#f8f8f2'
-
-  # Normal colors
-  normal:
-    black: '#000000'
-    red: '#ff5555'
-    green: '#50fa7b'
-    yellow: '#f1fa8c'
-    blue: '#caa9fa'
-    magenta: '#ff79c6'
-    cyan: '#8be9fd'
-    white: '#bfbfbf'
-
-  # Bright colors
-  bright:
-    black: '#575b70'
-    red: '#ff6e67'
-    green: '#5af78e'
-    yellow: '#f4f99d'
-    blue: '#caa9fa'
-    magenta: '#ff92d0'
-    cyan: '#9aedfe'
-    white: '#e6e6e6'
-
+    background: '#262626'
 font:
   # The size to use.
-  size: 10
-  # The normal (roman) font face to use.
   normal:
-    #family: FantasqueSansMono NF
-    family: Hack
-    # Style can be specified to pick a specific face.
-    style: Regular
-
-  offset:
-    x: 0
-    y: 3
-
-window:
-  # Window dimensions (changes require restart)
-  #
-  # Number of lines/columns (not pixels) in the terminal. The number of columns
-  # must be at least `2`, while using a value of `0` for columns and lines will
-  # fall back to the window manager's recommended size.
-  dimensions:
-    columns: 0
-    lines: 0
-
-  # Window padding (changes require restart)
-  #
-  # Blank space added around the window in pixels. This padding is scaled
-  # by DPI and the specified value is always added at both opposing sides.
-  padding:
-    x: 10
-    y: 10
+    family: CaskaydiaCove NF
+  size: 10.5
+#window:
+#  padding:
+#    x: 10
+#    y : 12

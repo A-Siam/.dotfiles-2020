@@ -120,13 +120,14 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>5</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
       <name>2</name>
       <name>3</name>
       <name>4</name>
+      <name>5</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -270,6 +271,7 @@
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
+	<allDesktops>yes</allDesktops>
         <finalactions>
           <action name="Focus"/>
           <action name="Raise"/>
@@ -689,6 +691,13 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
+	<application class="Chromium">
+		<desktop>2</desktop>
+	</application>
+
+	<application class="Code">
+		<desktop>3</desktop>
+	</application>
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.

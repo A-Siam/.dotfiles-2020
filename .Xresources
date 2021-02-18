@@ -18,7 +18,9 @@ URxvt*lineSpace: 0
 ! Special
 
 ! COOLORS
-*background:   #000000
+*background: #000000
+URxvt.background:   [80]#000000
+URxvt.depth: 32
 *foreground:   #eff0eb
 *cursorColor:  #dddddd
 
@@ -26,7 +28,7 @@ URxvt*lineSpace: 0
 *color8:      #AAAAAA
 *color1:      #ff5c57
 *color9:      #ff5c57
-*color2:      #218921
+*color2:      #2188dd
 *color10:     #5af78e
 *color3:      #f3f99d
 *color11:     #f3f99d

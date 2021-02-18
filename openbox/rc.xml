@@ -180,6 +180,9 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
+<keybind key="A-F12">
+  <action name="ToggleFullscreen"/>
+</keybind>
     <keybind key="C-A-Left">
       <action name="GoToDesktop">
         <to>left</to>
@@ -204,13 +207,13 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Left">
+    <keybind key="A-S-1">
       <action name="SendToDesktop">
         <to>left</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Right">
+    <keybind key="A-S-2">
       <action name="SendToDesktop">
         <to>right</to>
         <wrap>no</wrap>
@@ -255,7 +258,7 @@
     <keybind key="W-q">
       <action name="Close"/>
     </keybind>
-    <keybind key="A-Up">
+    <keybind key="A-S-space">
       <action name="ToggleMaximize"/>
     </keybind>
     <keybind key="A-Escape">
@@ -384,16 +387,6 @@
       </mousebind>
       <mousebind button="C-A-Down" action="Click">
         <action name="GoToDesktop">
-          <to>next</to>
-        </action>
-      </mousebind>
-      <mousebind button="A-S-Up" action="Click">
-        <action name="SendToDesktop">
-          <to>previous</to>
-        </action>
-      </mousebind>
-      <mousebind button="A-S-Down" action="Click">
-        <action name="SendToDesktop">
           <to>next</to>
         </action>
       </mousebind>

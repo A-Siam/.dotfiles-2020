@@ -1,12 +1,15 @@
 #! /bin/sh
 
-bspc monitor eDP1 -d 1 2 3 4 5 6 7 8 9
+bspc monitor eDP1 -d     
 bspc config focus_follows_pointer true
 
 bspc config border_width         1
 bspc config window_gap          5
+bspc config top_padding 60
+bspc config bottom_padding 5
 
-bspc config split_ratio          0.50
+
+bspc config split_ratio          0.65
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
@@ -26,6 +29,8 @@ bspc rule -a Peek state=floating
 bspc rule -a jetbrains-studio state=floating
 bspc rule -a Magnus state=floating
 bspc rule -a Zathura state=tiled desktop='^4'
+bspc rule -a git-cola desktop='^6'
+bspc rule -a Ssh-askpass state=floating desktop='^6'
 bspc rule -a mpv state=tiled desktop='^5' follow=on
 bspc rule -a Microsoft Teams - Preview sticky=on
 bspc rule -a URxvt:scratch state=floating

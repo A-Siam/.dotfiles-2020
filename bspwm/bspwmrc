@@ -13,5 +13,3 @@ alttab -w 1 -d 2 -bg "#252834" -fg "#ffffff" -frame "#AA33AA" -t 110x80 -i 110x3
 
 wmname LG3D
 
-artha &
-emote &

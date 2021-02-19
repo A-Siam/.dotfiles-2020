@@ -19,7 +19,7 @@ URxvt*lineSpace: 0
 
 ! COOLORS
 *background: #000000
-URxvt.background:   [80]#000000
+URxvt.background:   [90]#000000
 URxvt.depth: 32
 *foreground:   #eff0eb
 *cursorColor:  #dddddd

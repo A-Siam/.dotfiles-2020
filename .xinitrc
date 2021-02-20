@@ -32,6 +32,5 @@ export $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
 emote &
 
 feh --bg-fill ~/Wallpapers/4.jpg
-urxvt &
 exec bspwm
 # exec openbox-session

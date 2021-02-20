@@ -40,7 +40,7 @@ font-3 = Font Awesome 5 Free Regular:style=Regular:pixelsize=10
 
 modules-center = bspwm
 override-redirect = true
-border-size = 0
+border-size = 2
 border-color = #00000000
 line-size = 3
 
@@ -50,7 +50,7 @@ height = 5%
 offset-x = 25%
 offset-y = 1%
 radius = 9.0
-border-size = 7
+border-size = 2
 border-color = #00000000
 line-size = 3
 
@@ -62,7 +62,6 @@ override-redirect = true
 
 tray-position = right
 tray-detached = true
-
 
 
 padding-left = 2
@@ -83,10 +82,10 @@ radius = 9.0
 background = ${colors.background-light}
 foreground = ${colors.foreground-light}
 
-border-size = 7
+border-size = 2
 border-color = #00000000
 
-modules-center= filesystem date xkeyboard battery
+modules-center= filesystem date xkeyboard 
 font-0 = Hack:style=Regular:pixelsize=9
 font-1 = Font Awesome 5 Brands Regular:style=Regular:pixelsize=9
 font-2 = FontAwesome:style=Regular:pixelsize=9
@@ -105,7 +104,7 @@ override-redirect = true
 background = ${colors.background-dark}
 foreground = ${colors.foreground-dark}
 
-border-size = 7
+border-size = 2
 border-color = #00000000
 
 modules-center= alsa

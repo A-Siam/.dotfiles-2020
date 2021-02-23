@@ -2,7 +2,8 @@
 
 cd $1
 x=`find * | fzf`
+echo "$x"
 # $HOME/.scripts/sw ranger $x 
-ranger $x 
+ranger "$x"
 # lf $x 
 

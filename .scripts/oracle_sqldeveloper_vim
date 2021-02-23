@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# because sql developer ignore the double quotes
+$TERMINAL -e sh -c "vim $1"

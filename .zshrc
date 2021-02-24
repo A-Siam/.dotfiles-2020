@@ -14,17 +14,25 @@ precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats '@ [%b]'
 setopt PROMPT_SUBST
 RPROMPT=\$vcs_info_msg_0_
-PROMPT="%~> "
+PROMPT="%F{blue}[u:%n]%F{green}%~%F{reset}> "
 # word moving zsh
 bindkey ';5C' forward-word
 bindkey ';5D' backward-word
 # emacs bindkey
 bindkey -e
-
+# jump with ctrl+arrow
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
 # hist
+HISTFILE=$HOME/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory
 
 source $HOME/.zsh_autostart
 source $HOME/.zsh_aliases
+
+# plugins
+# Auto suggestion
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+

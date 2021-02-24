@@ -1,0 +1,2 @@
+echo -e "Grad project: TODO:\n- [ ] remove debug logs\n- [x] implement sending role in jwt\n- [ ] implement business logic\n"
+

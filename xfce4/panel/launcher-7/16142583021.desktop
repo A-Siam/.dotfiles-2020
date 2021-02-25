@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Microsoft Office PowerPoint 2007
+Exec=env WINEPREFIX="/home/a/win32" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/a/win32/dosdevices/c:/users/a/Start\\ Menu/Programs/Microsoft\\ Office/Microsoft\\ Office\\ PowerPoint\\ 2007.lnk
+Type=Application
+StartupNotify=true
+Comment=Create and edit presentations for slide shows, meetings, and Web pages by using Microsoft Office PowerPoint.
+Icon=027E_pptico.0
+StartupWMClass=powerpnt.exe
+X-XFCE-Source=file:///home/a/.local/share/applications/wine/Programs/Microsoft%20Office/Microsoft%20Office%20PowerPoint%202007.desktop

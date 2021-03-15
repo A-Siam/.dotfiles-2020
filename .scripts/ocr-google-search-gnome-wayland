@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+OCR_SCREENSHOT_PATH=$HOME/OCRScreenshots
+
+mkdir -p $OCR_SCREENSHOT_PATH
+gnome-screenshot -a -f $OCR_SCREENSHOT_PATH/screen.png
+convert $OCR_SCREENSHOT_PATH/screen.png $OCR_SCREENSHOT_PATH/screen.tiff
+tesseract $OCR_SCREENSHOT_PATH/screen.tiff $OCR_SCREENSHOT_PATH/screen txt
+
+res=`head --lines=-1 $OCR_SCREENSHOT_PATH/screen.txt`
+
+xdg-open "https://www.google.com/search?q=$res"
+
+echo $res | xclip -selection c

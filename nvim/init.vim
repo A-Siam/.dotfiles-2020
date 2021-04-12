@@ -14,6 +14,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'leafgarland/typescript-vim'
   Plug 'peitalin/vim-jsx-typescript'
   Plug 'preservim/nerdcommenter'
+  Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+  Plug 'thaerkh/vim-indentguides'
 call plug#end()
 
 " personal
@@ -135,3 +137,9 @@ hi ReactLifeCycleMethods ctermfg=204 guifg=#D19A66
 " nerd commenter
 filetype plugin on
 
+" vim -indentations
+" let g:indentguides_spacechar = '┆'
+" let g:indentguides_spacechar = '|'
+" let g:indentguides_tabchar = '|'
+let g:indentguides_spacechar = '▏'
+let g:indentguides_tabchar = '▏'

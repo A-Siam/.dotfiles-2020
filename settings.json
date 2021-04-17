@@ -1,0 +1,74 @@
+{
+  "editor.tabSize": 2,
+  "explorer.compactFolders": false,
+  "editor.fontSize": 16,
+  "editor.fontFamily": "'Hack NF','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.lineNumbers": "relative",
+  "window.titleBarStyle": "custom",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.parameterHints.enabled": false,
+  "workbench.statusBar.visible": true,
+  "editor.minimap.enabled": false,
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-x>": false,
+    "<C-f>": false,
+    "<C-k>": false,
+    "<C-b>": false,
+    "<C-d>": false,
+    "<ESC>": true
+  },
+  "vim.easymotion": true,
+  "editor.wordWrap": "on",
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "workbench.colorCustomizations": {
+    "editorLineNumber.foreground": "#999999"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.shell.linux": "/usr/bin/fish",
+  "todo-tree.tree.showScanModeButton": false,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "cSpell.userWords": [
+    "Abdullah",
+    "Vercel",
+    "noopener",
+    "noreferrer",
+    "rarr",
+    "reduxjs",
+    "tshirt"
+  ],
+  "workbench.iconTheme": "vscode-icons",
+  "editor.largeFileOptimizations": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "workbench.colorTheme": "GitHub Dark",
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

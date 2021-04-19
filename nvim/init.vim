@@ -5,7 +5,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'ghifarit53/tokyonight-vim'
   Plug 'lambdalisue/nerdfont.vim'
   Plug 'lambdalisue/fern-renderer-nerdfont.vim'
-  Plug 'junegunn/fzf.vim'
+  "Plug 'junegunn/fzf.vim'
   Plug 'easymotion/vim-easymotion'
   Plug 'jiangmiao/auto-pairs'
   Plug 'tpope/vim-surround'
@@ -16,6 +16,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdcommenter'
   Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
   Plug 'thaerkh/vim-indentguides'
+  Plug 'tranvansang/octave.vim'
+  Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 " personal
@@ -25,7 +27,7 @@ set rnu
 set mouse=a
 nmap <C-F> :CocSearch 
 nmap <Tab> :Fern . -drawer -toggle<CR>
-nmap <C-P> :GFiles<CR>
+" nmap <C-P> :FZF<CR>
 nmap <c-j> :resize +3<CR>
 nmap <c-k> :resize -3<CR>
 nmap <c-h> :vertical resize -3<CR>
@@ -45,6 +47,8 @@ let g:tokyonight_style = 'night' " available: night, storm
 let g:tokyonight_enable_italic = 1
 colorscheme tokyonight
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
 
 " fern 
 let g:fern#renderer = "nerdfont"

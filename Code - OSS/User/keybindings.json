@@ -30,4 +30,16 @@
     "key": "ctrl+t ctrl+t",
     "command": "workbench.action.toggleTabsVisibility"
   }
+  ,{
+    "key": "ctrl+j ctrl+u",
+    "command": "workbench.action.terminal.toggleTerminal",
+  },
+  {
+    "key": "ctrl+j ctrl+i",
+    "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "ctrl+k ctrl+a",
+    "command": "workbench.action.closeOtherEditors"
+  }
 ]

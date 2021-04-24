@@ -1,4 +1,8 @@
 # System config
+#
+"rofi -show emoji -modi emoji"
+    Mod4 + e
+
 "inkscape"
     Mod4 + i
 
@@ -17,10 +21,10 @@
 "blueman-manager"
     Mod4 + b
 
-"xbacklight -dec 5"
+"brightnessctl set 15-"
     Mod2 + XF86MonBrightnessDown
 
-"xbacklight -inc 5"
+"brightnessctl set 15+"
     Mod2 + XF86MonBrightnessUp
 
 "$BROWSER"
@@ -115,7 +119,7 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e sh -c $FILEEXP"
 	Mod4 + f
 
-"pcmanfm"
+"thunar"
 	Mod4 + Shift + f
 
 "$TERMINAL -e sh -c "htop""
@@ -228,7 +232,7 @@ Mod2 + XF86AudioMute
     Mod4+ Shift +j
 
 "bspc node --to-node north"
-    Mod4+ Shift +k
+    Mod4 + Shift + k
 
 "bspc node --to-node east"
     Mod4+ Shift +l
@@ -270,7 +274,7 @@ Mod2 + XF86AudioMute
 	Mod4 + 9
 
 "bspc node -c"
-	Mod4 + Shift + q
+	Mod4 + q
 
 "bspc node -d ^1"
 	Mod4 + Shift + 1
@@ -313,3 +317,4 @@ Mod2 + XF86AudioMute
 
 "$HOME/.scripts/firfox_here"
 		Mod4 + Shift + W
+

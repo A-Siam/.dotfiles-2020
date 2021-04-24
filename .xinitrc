@@ -5,32 +5,23 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-
 xbindkeys &
 nm-applet &
-blueman-applet &
 udiskie -t &
-batterymon -t 'gnome' -n 15&
-numlockx &
-clipmenud &
-
-picom --experimental-backends &
-xsetroot -cursor_name left_ptr
-# my touchpad preference
-xinput --set-prop 10 'libinput Accel Speed' 0.7&
-xrdb $HOME/.Xresources &
-hsetroot -solid "#000000" # for setting th wallpaper to black
-dunst &
-lxqt-policykit-agent &
-artha &
-# pnmixer&
-setxkbmap -layout us,ar && setxkbmap -option 'grp:win_space_toggle'
-
+sleep 1 && pulseaudio --start & 
+xcompmgr -c -l0 -t0 -r0 -o.00 &
+wmname LG3D &
+hsetroot -solid '#000000'
+xrdb $HOME/.Xresources
 eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
 export $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
+batterymon -t 'gnome' -n 15&
+setxkbmap -layout us,ar && setxkbmap -option 'grp:win_space_toggle'
+numlockx &
+blueman-applet &
+clipmenud &
+xscreensaver --no-splash&
+pulseaudio -D
+xsetroot -cursor_name left_ptr
 
-emote &
-
-feh --bg-fill ~/Wallpapers/4.jpg
-exec bspwm
-# exec openbox-session
+bspwm

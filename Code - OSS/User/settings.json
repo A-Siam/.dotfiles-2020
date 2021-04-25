@@ -1,4 +1,5 @@
 {
+  "explorer.compactFolders": false,
   "editor.fontFamily": "'Hack','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.lineNumbers": "relative",
   "window.titleBarStyle": "native",
@@ -39,7 +40,6 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 0,
   "oracledevtools.bookmarkFileFolder": "/home/a/Oracle/oracle.oracledevtools",
   "oracledevtools.connectionConfiguration.configFilesFolder": "/home/a/Oracle/network/admin",
   "oracledevtools.connectionConfiguration.walletFileFolder": "/home/a/Oracle/network/admin",
@@ -67,5 +67,8 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.activityBar.visible": false,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "GitHub Dark",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }

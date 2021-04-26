@@ -7,7 +7,8 @@ set -x CM_SELECTIONS "clipboard primary"
 set -x WINEARCH win32
 set -x WINEPREFIX ~/win32
 
-set -x BROWSER firefox
+set -x ELECTRON_TRASH trash-cli
+set -x BROWSER chrome
 set -x TERMINAL urxvt
 set -x TERM xterm-256color
 set -x FILEEXP ranger
@@ -15,6 +16,7 @@ set -x EDITOR vim
 set -x npm_config_prefix $HOME/.node_modules
 
 # aliases
+alias pt="pkill teams"
 alias ch="code . -r"
 alias gof="cd ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/"
 alias word="cd ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/ && wine WINWORD.EXE"
@@ -55,7 +57,8 @@ set -x ORACLE_HOME /opt/oracle/product/18c/dbhomeXE
 set -x ORACLE_SID XE
 
 # general path
-set -x PATH $PATH:$ORACLE_HOME/bin:$HOME/bin:$HOME/.cargo/bin:$HOME/.node_modules/bin
+fish_add_path $HOME/.node_modules/bin
+fish_add_path $HOME/.local/bin
 
 function conda_init;
 # >>> conda initialize >>>
@@ -65,9 +68,5 @@ eval /run/media/asiam/MyProjects/ML/anaconda3/bin/conda "shell.fish" "hook" $arg
 end
 
 # add normal python binaries to our path
-set PATH /home/asiam/.local/bin $PATH
-fish_vi_key_bindings
-
-# notes
-echo "NOTES:"
-echo "we are going to have 2 quizes in parallel"
+fish_add_path /home/asiam/.local/bin
+bind --preset -M insert \eq __fish_prepend_sudo

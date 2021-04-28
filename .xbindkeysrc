@@ -43,6 +43,7 @@ Mod2 + XF86AudioMute
 
 # personal bindings
 #
+
 "$HOME/.scripts/dmenu-projects"
     Mod4 + Shift + p
 
@@ -58,7 +59,7 @@ Mod2 + XF86AudioMute
 "$BROWSER https://github.com/"
     Mod4+Alt+g
 
-"$BROWSER https://drive.google.com/drive/u/0/folders/1RqZoC7_pNArcAoXe1yn0MNruEve_kGlJ"
+"$BROWSER https://drive.google.com/drive/u/0/folders/19o0jcAiPu8nwThBaSDuZZCOYyv7aR_Qn"
     Mod4+Alt+d
 
 "$HOME/.scripts/dmenu-simple-mtpfs"
@@ -297,14 +298,11 @@ Mod2 + XF86AudioMute
 "bspc node -d ^9"
 	Mod4 + Shift + 9
 
-"bspc node west -f"
-    Mod4 + h
-"bspc node east -f"
-    Mod4 + l
-"bspc node north -f"
-    Mod4 + k
-"bspc node south -f"
+"bspc node @parent -R 90"
     Mod4 + j
+
+"bspc node @parent -R -90"
+    Mod4 + Shift + j
 
 "bspc node -t fullscreen"
     Mod2+Mod4 + bracketright

@@ -3,6 +3,9 @@
 "rofi -show emoji -modi emoji"
     Mod4 + e
 
+"drawio"
+    Mod4 + Shift + d
+
 "inkscape"
     Mod4 + i
 
@@ -299,10 +302,10 @@ Mod2 + XF86AudioMute
 	Mod4 + Shift + 9
 
 "bspc node @parent -R 90"
-    Mod4 + j
+    Mod4 + u
 
 "bspc node @parent -R -90"
-    Mod4 + Shift + j
+    Mod4 + Shift + u
 
 "bspc node -t fullscreen"
     Mod2+Mod4 + bracketright
@@ -313,6 +316,14 @@ Mod2 + XF86AudioMute
 "bspc node -t floating"
     Mod2+Mod4 +Shift + bracketleft
 
-"$HOME/.scripts/firfox_here"
-		Mod4 + Shift + W
+"bspc node west -f"
+    Mod4 + h	
 
+"bspc node north -f"
+    Mod4 + k	
+
+"bspc node south -f"
+    Mod4 + j
+
+"bspc node east -f"
+    Mod4 + l

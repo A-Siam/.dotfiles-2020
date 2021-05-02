@@ -302,10 +302,10 @@ Mod2 + XF86AudioMute
 	Mod4 + Shift + 9
 
 "bspc node @parent -R 90"
-    Mod4 + u
+    Mod4 + i
 
 "bspc node @parent -R -90"
-    Mod4 + Shift + u
+    Mod4 + Shift + i
 
 "bspc node -t fullscreen"
     Mod2+Mod4 + bracketright

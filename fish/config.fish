@@ -9,13 +9,16 @@ set -x WINEPREFIX ~/win32
 
 set -x ELECTRON_TRASH trash-cli
 set -x BROWSER chrome
-set -x TERMINAL urxvt
+set -x TERMINAL xfce4-terminal
 set -x TERM xterm-256color
 set -x FILEEXP ranger
 set -x EDITOR vim
 set -x npm_config_prefix $HOME/.node_modules
+set -x LS_COLORS "ow=01;35:"
 
 # aliases
+alias yrd="yarn run dev"
+alias ya="yarn add"
 alias pt="pkill teams"
 alias ch="code . -r"
 alias gof="cd ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/"
@@ -63,10 +66,10 @@ fish_add_path $HOME/.local/bin
 function conda_init;
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-eval /run/media/asiam/MyProjects/ML/anaconda3/bin/conda "shell.fish" "hook" $argv | source
-# <<< conda initialize <<<;
+eval /home/a/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+# <<< conda initialize <<<
+;
 end
 
 # add normal python binaries to our path
 fish_add_path /home/asiam/.local/bin
-bind --preset -M insert \eq __fish_prepend_sudo

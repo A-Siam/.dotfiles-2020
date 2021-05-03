@@ -50,10 +50,10 @@ Mod2 + XF86AudioMute
 "$HOME/.scripts/dmenu-projects"
     Mod4 + Shift + p
 
-"$TERMINAL -e  sh -c "vim""
+"$TERMINAL -e "vim""
     Mod4 + v
 
-"$TERMINAL -e  sh -c "nmtui""
+"$TERMINAL -e "nmtui""
     Mod4 + n
 
 "./.scripts/dmenu-msoffice"
@@ -104,29 +104,29 @@ Mod2 + XF86AudioMute
 "clipmenu"
     Mod2+Mod4 + period
 
-"$TERMINAL -e  sh -c "vim $HOME/.config/fish/config.fish""
+"$TERMINAL -e  "vim $HOME/.config/fish/config.fish""
     Mod4 + alt +z
 
-"$TERMINAL -e sh -c "vim /home/$USER/.xbindkeysrc"" # configure bindings
+"$TERMINAL -e "vim /home/$USER/.xbindkeysrc"" # configure bindings
 	Mod4+ Alt + b
 
-"$TERMINAL -e sh -c  "vim /home/$USER/.xinitrc"" 
+"$TERMINAL -e  "vim /home/$USER/.xinitrc"" 
 	Mod4+ Alt + i
 
-"$TERMINAL -e sh -c "vim /home/$USER/.config/bspwm/bsp_settings"" # configure bindings
+"$TERMINAL -e "vim /home/$USER/.config/bspwm/bsp_settings"" # configure bindings
 	Mod4+ Alt + w
 
-"$TERMINAL -e sh -c "vim /home/$USER/.vimrc"" # configure bindings
+"$TERMINAL -e "vim /home/$USER/.vimrc"" # configure bindings
 	Mod4+ Alt + v
 
 
-"$TERMINAL -e sh -c $FILEEXP"
+"$TERMINAL -e $FILEEXP"
 	Mod4 + f
 
 "thunar"
 	Mod4 + Shift + f
 
-"$TERMINAL -e sh -c "htop""
+"$TERMINAL -e "htop""
 	Mod4 + m
 
 "$HOME/.scripts/screenshot"
@@ -144,7 +144,7 @@ Mod2 + XF86AudioMute
 "$HOME/.scripts/ocr_screenshot_google"
     Mod4 + Shift + slash
 
-"$TERMINAL -e sh -c "$HOME/.scripts/fzf-fm /run/media/$USER""
+"$TERMINAL -e "$HOME/.scripts/fzf-fm /run/media/$USER""
     Mod4+alt+0
 
 "$HOME/.scripts/clip-youtube-search"

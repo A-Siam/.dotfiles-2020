@@ -2,9 +2,6 @@
 
 /home/$USER/.config/bspwm/bsp_settings
 
-# launch applications
-feh --bg-center  ~/Wallpapers/310923.jpg
-
 pulseaudio -D
 
 $HOME/.config/polybar/launch.sh
@@ -14,5 +11,6 @@ pkill pulseaudio
 alttab -w 1 -d 2 -bg "#252834" -fg "#ffffff" -frame "#AC7F12" -t 110x80 -i 110x32 &
 
 wmname LG3D
+
 
 $HOME/.config/bspwm/dynamic_all_desks.sh

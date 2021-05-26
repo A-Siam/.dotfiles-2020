@@ -4,19 +4,17 @@ set -x CM_DEBUG 1
 set -x CM_MAX_CLIPS 100
 set -x CM_HISTLENGTH 20
 set -x CM_SELECTIONS "clipboard primary"
-set -x WINEARCH win32
-set -x WINEPREFIX ~/win32
 
-set -x ELECTRON_TRASH trash-cli
 set -x BROWSER chrome
-set -x TERMINAL xfce4-terminal
+set -x TERMINAL lxterminal
 set -x TERM xterm-256color
 set -x FILEEXP ranger
 set -x EDITOR vim
-set -x npm_config_prefix $HOME/.node_modules
 set -x LS_COLORS "ow=01;35:"
+set -x JAVA_HOME /usr/lib/jvm/java-8-openjdk
 
 # aliases
+alias pig="ping www.google.com"
 alias yrd="yarn run dev"
 alias ya="yarn add"
 alias pt="pkill teams"
@@ -60,7 +58,7 @@ set -x ORACLE_HOME /opt/oracle/product/18c/dbhomeXE
 set -x ORACLE_SID XE
 
 # general path
-fish_add_path $HOME/.node_modules/bin
+fish_add_path $HOME/.npm/bin
 fish_add_path $HOME/.local/bin
 
 function conda_init;

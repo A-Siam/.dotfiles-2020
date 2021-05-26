@@ -5,6 +5,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+
 xbindkeys &
 nm-applet &
 udiskie -t &
@@ -23,5 +24,7 @@ clipmenud &
 xscreensaver --no-splash&
 pulseaudio -D
 xsetroot -cursor_name left_ptr
+dunst&
 
-bspwm
+# exec bspwm
+exec openbox-session

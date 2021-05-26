@@ -1,0 +1,5 @@
+# this is useless for now
+echo no | avdmanager create avd --force --name "HelloAVD" --abi "google_apis/x86" --package "system-images;android-30;google_apis;x86" --device "pixel_xl"
+
+emulator -list-avds
+emulator -avd HelloAVD

@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-cd /run/media/$USER/MyFiles/CSE_Acad/4th\ year
+cd /run/media/$USER/MyFiles/CSE_Acad/4th\ year/2nd_term
 
 s=`ls -d */| dmenu -i -l 10 -p "Academic Studying" -b -sb "#00B454" -sf "#0A0E14" -nb "#0A0E14" -nf "#00B454"`
 

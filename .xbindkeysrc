@@ -21,6 +21,9 @@
 "$TERMINAL"
     Mod4 + Return
 
+"$TERMINAL -e "vim $HOME/.scripts/todos.sh""
+    Mod4 + Shift + a
+
 "blueman-manager"
     Mod4 + b
 
@@ -123,7 +126,7 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e $FILEEXP"
 	Mod4 + f
 
-"thunar"
+"pcmanfm"
 	Mod4 + Shift + f
 
 "$TERMINAL -e "htop""
@@ -277,8 +280,15 @@ Mod2 + XF86AudioMute
 "bspc desktop ^9 -f"
 	Mod4 + 9
 
-"bspc node -c"
-	Mod4 + q
+# if bspwm undo doesn't exist you should uncomment this
+# "bspc node -c"
+#     Mod4 + q
+
+"ubspc close"
+    Mod4 + q
+
+"ubspc undo close"
+    Mod4 + Shift + q
 
 "bspc node -d ^1"
 	Mod4 + Shift + 1

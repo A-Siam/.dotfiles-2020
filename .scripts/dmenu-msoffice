@@ -2,13 +2,13 @@
 choise=`echo -e "word\npowerpoint\nexcel\nphotoshop" | dmenu -i -sb "#a062aa" -nb "#000011" -b`
 if [[ $choise == "word" ]] 
 then
-    wine ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/WINWORD.EXE
+    wine "/home/a/.wine/drive_c/Program Files (x86)/Microsoft Office/Office12/WINWORD.EXE"
 elif [[ $choise == "powerpoint" ]]
 then
-    wine ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/POWERPNT.EXE
+    wine "/home/a/.wine/drive_c/Program Files (x86)/Microsoft Office/Office12/POWERPNT.EXE"
 elif [[ $choise == "excel" ]]
 then
-    wine ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/EXCEL.EXE
+    wine "/home/a/.wine/drive_c/Program Files (x86)/Microsoft Office/Office12/EXCEL.EXE"
 elif [[ $choise == "photoshop" ]]
 then
     cd "/run/media/$USER/MyFiles/Software/WindowsSoftwares/Adobe Photoshop CS5 ME Portable/Adobe Photoshop CS5 ME Portable"

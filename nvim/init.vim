@@ -5,7 +5,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'ghifarit53/tokyonight-vim'
   Plug 'lambdalisue/nerdfont.vim'
   Plug 'lambdalisue/fern-renderer-nerdfont.vim'
-  "Plug 'junegunn/fzf.vim'
+  Plug 'junegunn/fzf.vim'
   Plug 'easymotion/vim-easymotion'
   Plug 'jiangmiao/auto-pairs'
   Plug 'tpope/vim-surround'
@@ -15,9 +15,13 @@ call plug#begin('~/.vim/plugged')
   Plug 'peitalin/vim-jsx-typescript'
   Plug 'preservim/nerdcommenter'
   Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-  Plug 'thaerkh/vim-indentguides'
   Plug 'tranvansang/octave.vim'
-  Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'Nudin/vim-indentguides'
+  Plug 'vim-airline/vim-airline'
+  Plug 'dag/vim-fish'
+  Plug 'wojciechkepka/vim-github-dark'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " personal
@@ -25,6 +29,7 @@ call plug#end()
 set number
 set rnu
 set mouse=a
+nmap <C-p> :GFiles<CR>
 nmap <C-F> :CocSearch 
 nmap <Tab> :Fern . -drawer -toggle<CR>
 " nmap <C-P> :FZF<CR>
@@ -43,9 +48,10 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set termguicolors
-let g:tokyonight_style = 'night' " available: night, storm
-let g:tokyonight_enable_italic = 1
-colorscheme tokyonight
+" let g:tokyonight_style = 'night' " available: night, storm
+" let g:tokyonight_enable_italic = 1
+let g:gh_color = "soft"
+colorscheme ghdark
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
@@ -147,3 +153,42 @@ filetype plugin on
 " let g:indentguides_tabchar = '|'
 let g:indentguides_spacechar = '▏'
 let g:indentguides_tabchar = '▏'
+let g:indentguides_toggleListMode = 0
+let g:indentguides_concealcursor_unaltered = 1
+
+" vim airline
+let g:airline#extensions#tabline#fnamemod = ':.'
+" air-line
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
+
+" git gutter
+set updatetime=100
+let g:gitgutter_enabled = 1
+

@@ -22,10 +22,12 @@ call plug#begin('~/.vim/plugged')
   Plug 'wojciechkepka/vim-github-dark'
   Plug 'airblade/vim-gitgutter'
   Plug 'tpope/vim-fugitive'
+  Plug 'tomasiser/vim-code-dark'
+  Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
-" personal
-"
+"""""""" personal
+set colorcolumn=80
 set number
 set rnu
 set mouse=a
@@ -38,6 +40,7 @@ nmap <c-k> :resize -3<CR>
 nmap <c-h> :vertical resize -3<CR>
 nmap <c-l> :vertical resize +3<CR>
 nmap <space>s :wa<CR>
+map <space>p :Prettier<CR>
 nmap <space>q :q<CR>
 nmap <space>Q :q!<CR>
 nmap <space>n :noh<CR>
@@ -52,15 +55,17 @@ set termguicolors
 " let g:tokyonight_enable_italic = 1
 let g:gh_color = "soft"
 colorscheme ghdark
+" colorscheme codedark
+
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+" let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+highlight ColorColumn ctermbg=0 guibg=#222222
 
-
-" fern 
+"""""""" fern 
 let g:fern#renderer = "nerdfont"
 set cursorline
 
-" coc
+"""""""" coc
 set hidden
 set nobackup
 set nowritebackup
@@ -165,7 +170,7 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
-" unicode symbols
+" Unicode symbols
 let g:airline_left_sep = '»'
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '«'
@@ -188,7 +193,9 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'molokai'
+
 " git gutter
 set updatetime=100
 let g:gitgutter_enabled = 1
-

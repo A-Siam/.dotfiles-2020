@@ -27,6 +27,8 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 """""""" personal
+nnoremap <space>u :bprevious<CR>
+nnoremap <space>i   :bnext<CR>
 set colorcolumn=80
 set number
 set rnu
@@ -41,7 +43,7 @@ nmap <c-h> :vertical resize -3<CR>
 nmap <c-l> :vertical resize +3<CR>
 nmap <space>s :wa<CR>
 map <space>p :Prettier<CR>
-nmap <space>q :q<CR>
+nmap <space>q :bd<CR>
 nmap <space>Q :q!<CR>
 nmap <space>n :noh<CR>
 nmap <c-LeftMouse> <Plug>(fern-action-open-or-expand)

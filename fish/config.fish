@@ -4,14 +4,16 @@ set -x CM_DEBUG 1
 set -x CM_MAX_CLIPS 100
 set -x CM_HISTLENGTH 20
 set -x CM_SELECTIONS "clipboard primary"
+set -x ELECTRON_TRASH "trash-cli"
 
 set -x BROWSER chrome
-set -x TERMINAL lxterminal
+set -x TERMINAL xfce4-terminal
 set -x TERM xterm-256color
 set -x FILEEXP ranger
 set -x EDITOR vim
 set -x LS_COLORS "ow=01;35:"
 set -x JAVA_HOME /usr/lib/jvm/java-8-openjdk
+set -x ANDROID_SDK_ROOT $HOME/Android/Sdk
 
 # aliases
 alias pig="ping www.google.com"
@@ -20,8 +22,8 @@ alias ya="yarn add"
 alias pt="pkill teams"
 alias ch="code . -r"
 alias gof="cd ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/"
-alias word="cd ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/ && wine WINWORD.EXE"
-alias powerpoint="cd ~/win32/drive_c/Program\ Files/Microsoft\ Office/Office12/ && wine POWERPNT.EXE"
+alias word="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Microsoft\ Office/Office12/WINWORD.EXE"
+alias powerpoint="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Microsoft\ Office/Office12/POWERPNT.EXE"
 alias jn="condaInit && jupyter notebook"
 alias si="sudo pacman -S"
 alias sup="sudo pacman -Syu"
@@ -50,8 +52,11 @@ alias gc="git commit"
 alias gp="git push"
 alias pys="python -m http.server"
 alias gpp="cd ~/programming_playground"
-alias v="vim"
-
+alias v="vim -u NONE"
+alias hibernate="systemctl hibernate"
+alias docksa="systemctl start docker"
+alias dockso="systemctl stop docker"
+alias dcu="docker-compose up"
 
 # oracle xe env vars
 set -x ORACLE_HOME /opt/oracle/product/18c/dbhomeXE
@@ -59,7 +64,14 @@ set -x ORACLE_SID XE
 
 # general path
 fish_add_path $HOME/.npm/bin
+fish_add_path $HOME/bin
 fish_add_path $HOME/.local/bin
+fish_add_path $ANDROID_SDK_ROOT/platform-tools
+fish_add_path $ANDROID_SDK_ROOT/tools
+fish_add_path $ANDROID_SDK_ROOT/tools/bin
+fish_add_path $ANDROID_SDK_ROOT/emulator
+fish_add_path "/run/media/$USER/MyProjects/flutter_linux_2.2.0-stable/flutter/bin"
+fish_add_path "/home/a/.wine/drive_c/Program Files (x86)/Microsoft Office/Office12"
 
 function conda_init;
 # >>> conda initialize >>>
@@ -71,3 +83,6 @@ end
 
 # add normal python binaries to our path
 fish_add_path /home/asiam/.local/bin
+
+# $HOME/.scripts/todos.sh
+source $HOME/.scripts/lficons.fish

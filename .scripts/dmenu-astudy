@@ -7,5 +7,5 @@ s=`ls -d */| dmenu -i -l 10 -p "Academic Studying" -b -sb "#00B454" -sf "#0A0E14
 if [[ $s != "" ]] 
 then
     cd ./"$s"
-    $TERMINAL -e sh -c $FILEEXP
+    $TERMINAL -e $FILEEXP
 fi

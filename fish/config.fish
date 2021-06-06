@@ -86,3 +86,5 @@ fish_add_path /home/asiam/.local/bin
 
 # $HOME/.scripts/todos.sh
 source $HOME/.scripts/lficons.fish
+
+#this is a comment

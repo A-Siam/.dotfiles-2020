@@ -42,6 +42,7 @@ format-offset =
 background = #2F343F
 background-alt = #666666
 foreground = #f3f4f5
+foreground-alt = #666666
 alert = #d08770
 volume-min = #a3be8c
 volume-med = #ebcb8b
@@ -1594,7 +1595,7 @@ label-urgent-padding = 2
 
 
 label-empty = %name%
-label-empty-foreground = ${colors.foreground}
+label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}

@@ -283,12 +283,12 @@ foreground = ${colors.foreground}
 line-size = 2
 line-color = #f00
 
-;border-size = 2
+border-size = 2
 ;border-left-size = 25
 ;border-right-size = 25
 ;border-top-size = 0
 ;border-bottom-size = 25
-;border-color = #00000000
+border-color = #00000000
 
 padding-left = 1
 padding-right = 1

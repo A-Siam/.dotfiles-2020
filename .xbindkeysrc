@@ -56,9 +56,6 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e "vim""
     Mod4 + v
 
-"$TERMINAL -e "nmtui""
-    Mod4 + n
-
 "./.scripts/dmenu-msoffice"
     Mod4 + o
 
@@ -116,7 +113,7 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e  "vim /home/$USER/.xinitrc"" 
 	Mod4+ Alt + i
 
-"$TERMINAL -e "vim /home/$USER/.config/bspwm/bsp_settings"" # configure bindings
+# "$TERMINAL -e "vim /home/$USER/.config/bspwm/bsp_settings"" # configure bindings
 	Mod4+ Alt + w
 
 "$TERMINAL -e "vim /home/$USER/.vimrc"" # configure bindings
@@ -191,149 +188,144 @@ Mod2 + XF86AudioMute
 
 # bspwm config
 
-"bspc node focused --swap west"
-		Mod4 + Shift + U
-
-"/home/$USER/.config/bspwm/bsp_settings"
-    Mod4 + Shift + R
-
-"bsp-layout remove && notify-send 'layout restored'"
-    Mod4 + alt + 8
-
-"bsp-layout set tall -- --master-size 0.65 && notify-send 'layout configured'"
-    Mod4 + alt + 9
-
-"bspc node -z left -50 0 || bspc node -z right -50 0"
-    Mod4 + alt + h
-
-"bspc node -z right 50 0 || bspc node -z left 50 0"
-    Mod4 + alt + l
-
-"bspc node -z bottom 0 50 || bspc node -z top 0 50"
-    Mod4 + alt + j
-
-"bspc node -z top 0 -50 || bspc node -z bottom 0 -50"
-    Mod4 + alt + k
-
-"dmenu_run -b -i"
-    Mod4+d
-
-"bspc node -n 'last.!automatic.local'"
-    Mod4+ p # "p" to "p"ush it to the "p"reselected
-
-"bspc node -p north"
-    Mod4+Up
-
-"bspc node -p south"
-    Mod4+Down
-
-"bspc node -p east"
-    Mod4+Right
-
-"bspc node -p west"
-    Mod4+Left
-
-"bspc node -p cancel"
-    Mod2+Mod4 + Escape
-"bspc node --to-node south"
-    Mod4+ Shift +j
-
-"bspc node --to-node north"
-    Mod4 + Shift + k
-
-"bspc node --to-node east"
-    Mod4+ Shift +l
-
-"bspc node --to-node west"
-    Mod4 + Shift + h
-
-"bspc desktop next.occupied -f"
-    alt + x
-
-"bspc desktop prev.occupied -f"
-    alt + z
-
-"bspc desktop ^1 -f"
-	Mod4 + 1
-
-"bspc desktop ^2 -f"
-	Mod4 + 2
-
-"bspc desktop ^3 -f"
-	Mod4 + 3
-
-"bspc desktop ^4 -f"
-	Mod4 + 4
-
-"bspc desktop ^5 -f"
-	Mod4 + 5
-
-"bspc desktop ^6 -f"
-	Mod4 + 6
-
-"bspc desktop ^7 -f"
-	Mod4 + 7
-
-"bspc desktop ^8 -f"
-	Mod4 + 8
-
-"bspc desktop ^9 -f"
-	Mod4 + 9
-
-# if bspwm undo doesn't exist you should uncomment this
+# "bspc node focused --swap west"
+# 		Mod4 + Shift + U
+# 
+# "/home/$USER/.config/bspwm/bsp_settings"
+#     Mod4 + Shift + R
+# 
+# "bsp-layout remove && notify-send 'layout restored'"
+#     Mod4 + alt + 8
+# 
+# "bsp-layout set tall -- --master-size 0.55 && notify-send 'layout configured'"
+#     Mod4 + alt + 9
+# 
+# "bspc node -z left -50 0 || bspc node -z right -50 0"
+#     Mod4 + alt + h
+# 
+# "bspc node -z right 50 0 || bspc node -z left 50 0"
+#     Mod4 + alt + l
+# 
+# "bspc node -z bottom 0 50 || bspc node -z top 0 50"
+#     Mod4 + alt + j
+# 
+# "bspc node -z top 0 -50 || bspc node -z bottom 0 -50"
+#     Mod4 + alt + k
+# 
+# "dmenu_run -b -i"
+#     Mod4+d
+# 
+# "bspc node -n 'last.!automatic.local'"
+#     Mod4+ p # "p" to "p"ush it to the "p"reselected
+# 
+# "bspc node -p north"
+#     Mod4+Up
+# 
+# "bspc node -p south"
+#     Mod4+Down
+# 
+# "bspc node -p east"
+#     Mod4+Right
+# 
+# "bspc node -p west"
+#     Mod4+Left
+# 
+# "bspc node -p cancel"
+#     Mod2+Mod4 + Escape
+# "bspc node --to-node south"
+#     Mod4+ Shift +j
+# 
+# "bspc node --to-node north"
+#     Mod4 + Shift + k
+# 
+# "bspc node --to-node east"
+#     Mod4+ Shift +l
+# 
+# "bspc node --to-node west"
+#     Mod4 + Shift + h
+# 
+# "bspc desktop next.occupied -f"
+#     alt + x
+# 
+# "bspc desktop prev.occupied -f"
+#     alt + z
+# 
+# "bspc desktop ^1 -f"
+# 	Mod4 + 1
+# 
+# "bspc desktop ^2 -f"
+# 	Mod4 + 2
+# 
+# "bspc desktop ^3 -f"
+# 	Mod4 + 3
+# 
+# "bspc desktop ^4 -f"
+# 	Mod4 + 4
+# 
+# "bspc desktop ^5 -f"
+# 	Mod4 + 5
+# 
+# "bspc desktop ^6 -f"
+# 	Mod4 + 6
+# 
+# "bspc desktop ^7 -f"
+# 	Mod4 + 7
+# 
+# "bspc desktop ^8 -f"
+# 	Mod4 + 8
+# 
+# "bspc desktop ^9 -f"
+# 	Mod4 + 9
+# 
+# # if bspwm undo doesn't exist you should uncomment this
 # "bspc node -c"
 #     Mod4 + q
-
-"ubspc close"
-    Mod4 + q
-
-"ubspc undo close"
-    Mod4 + Shift + q
-
-"bspc node -d ^1"
-	Mod4 + Shift + 1
-"bspc node -d ^2"
-	Mod4 + Shift + 2
-"bspc node -d ^3"
-	Mod4 + Shift + 3
-"bspc node -d ^4"
-	Mod4 + Shift + 4
-"bspc node -d ^5"
-	Mod4 + Shift + 5
-"bspc node -d ^6"
-	Mod4 + Shift + 6
-"bspc node -d ^7"
-	Mod4 + Shift + 7
-"bspc node -d ^2"
-	Mod4 + Shift + 8
-"bspc node -d ^8"
-	Mod4 + Shift + 8
-"bspc node -d ^9"
-	Mod4 + Shift + 9
-
-"bspc node @parent -R 90"
-    Mod4 + i
-
-"bspc node @parent -R -90"
-    Mod4 + Shift + i
-
-"bspc node -t fullscreen"
-    Mod2+Mod4 + bracketright
-
-"bspc node -t tiled"
-    Mod2+Mod4 + bracketleft
-
-"bspc node -t floating"
-    Mod2+Mod4 +Shift + bracketleft
-
-"bspc node west -f"
-    Mod4 + h	
-
-"bspc node north -f"
-    Mod4 + k	
-
-"bspc node south -f"
-    Mod4 + j
-
-"bspc node east -f"
-    Mod4 + l
+# 
+# 
+# "bspc node -d ^1"
+# 	Mod4 + Shift + 1
+# "bspc node -d ^2"
+# 	Mod4 + Shift + 2
+# "bspc node -d ^3"
+# 	Mod4 + Shift + 3
+# "bspc node -d ^4"
+# 	Mod4 + Shift + 4
+# "bspc node -d ^5"
+# 	Mod4 + Shift + 5
+# "bspc node -d ^6"
+# 	Mod4 + Shift + 6
+# "bspc node -d ^7"
+# 	Mod4 + Shift + 7
+# "bspc node -d ^2"
+# 	Mod4 + Shift + 8
+# "bspc node -d ^8"
+# 	Mod4 + Shift + 8
+# "bspc node -d ^9"
+# 	Mod4 + Shift + 9
+# 
+# "bspc node @parent -R 90"
+#     Mod4 + i
+# 
+# "bspc node @parent -R -90"
+#     Mod4 + Shift + i
+# 
+# "bspc node -t fullscreen"
+#     Mod2+Mod4 + bracketright
+# 
+# "bspc node -t tiled"
+#     Mod2+Mod4 + bracketleft
+# 
+# "bspc node -t floating"
+#     Mod2+Mod4 +Shift + bracketleft
+# 
+# "bspc node west -f"
+#     Mod4 + h	
+# 
+# "bspc node north -f"
+#     Mod4 + k	
+# 
+# "bspc node south -f"
+#     Mod4 + j
+# 
+# "bspc node east -f"
+#     Mod4 + l

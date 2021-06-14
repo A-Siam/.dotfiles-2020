@@ -13,7 +13,7 @@ local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
-local primary_color = "#666688"
+local primary_color = "#66aadd"
 
 theme.font          = "sans 9"
 

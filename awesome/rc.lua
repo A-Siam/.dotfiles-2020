@@ -503,6 +503,10 @@ awful.rules.rules = {
        properties = { screen = 1, tag = "2", border_width = 0 } },
     { rule = { class = "Code" },
        properties = { screen = 1, tag = "3", border_width = 0} },
+    { rule = { class = "Zathura" },
+       properties = { screen = 1, tag = "4" },
+    { rule = { class = "mpv" },
+       properties = { screen = 1, tag = "5" },
 }
 -- }}}
 

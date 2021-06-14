@@ -11,3 +11,4 @@ run alttab -w 1 -d 2 -bg "#2F343F" -fg "#ffffff" -frame "#0084FF" -t 110x80 -i 1
 
 run wmname LG3D
 
+

@@ -3,6 +3,9 @@
 "rofi -show emoji -modi emoji"
     Mod4 + e
 
+"rofi -show window"
+    Alt + Tab
+
 "drawio"
     Mod4 + Shift + d
 

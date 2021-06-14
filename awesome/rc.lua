@@ -506,6 +506,8 @@ awful.rules.rules = {
        properties = { screen = 1, tag = "4" } },
     { rule = { class = "mpv" },
        properties = { screen = 1, tag = "5" } },
+    { rule = { class = "Polybar" },
+       properties = { border_width = 0} },
 }
 -- }}}
 

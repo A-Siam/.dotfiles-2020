@@ -8,7 +8,8 @@ fi
 xbindkeys &
 nm-applet &
 udiskie -t &
-xcompmgr -c -l0 -t0 -r0 -o.00 &
+# xcompmgr -c -l0 -t0 -r0 -o.00 &
+picom &
 wmname LG3D &
 hsetroot -solid '#303030'
 xrdb $HOME/.Xresources
@@ -26,4 +27,5 @@ thunar --daemon&
 # exec bspwm
 # exec openbox-session
 # exec spectrwm
-exec awesome
+exec awesome >> ~/.cache/awesome/stdout 2>> ~/.cache/awesome/stderr
+

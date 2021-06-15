@@ -47,7 +47,7 @@
 "pamixer -t"
 Mod2 + XF86AudioMute
 
-"$HOME/.scripts/res-xbindkeys"
+"$HOME/.scripts/res-xbindkeys && notify-send "keys resetted!""
     Mod4 + Mod2 + R
 
 # personal bindings
@@ -126,7 +126,7 @@ Mod2 + XF86AudioMute
 "$TERMINAL -e $FILEEXP"
 	Mod4 + f
 
-"pcmanfm"
+"nautilus"
 	Mod4 + Shift + f
 
 "$TERMINAL -e "htop""

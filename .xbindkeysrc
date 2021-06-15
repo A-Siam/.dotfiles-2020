@@ -3,7 +3,7 @@
 "rofi -show emoji -modi emoji"
     Mod4 + e
 
-"rofi -show window"
+"$HOME/.scripts/rofi-alttab"
     Alt + Tab
 
 "drawio"

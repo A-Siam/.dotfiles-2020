@@ -352,13 +352,13 @@ clientkeys = gears.table.join(
               {description = "move to screen", group = "client"}),
     awful.key({ modkey,           }, "t",      function (c) c.ontop = not c.ontop            end,
               {description = "toggle keep on top", group = "client"}),
-    -- awful.key({ modkey,           }, "n",
-    --    function (c)
-            -- The client currently has the input focus, so it cannot be
-            -- minimized, since minimized clients can't have the focus.
-            -- c.minimized = true
-     --   end ,
-     --   {description = "minimize", group = "client"}),
+    awful.key({ modkey,  "Control"         }, "apostrophe",
+       function (c)
+         -- The client currently has the input focus, so it cannot be
+         -- minimized, since minimized clients can't have the focus.
+          c.minimized = true
+       end ,
+       {description = "minimize", group = "client"}),
     awful.key({ modkey,  "Control"         }, "m",
         function (c)
             c.maximized = not c.maximized
@@ -507,11 +507,13 @@ awful.rules.rules = {
     { rule = { class = "Google-chrome" },
        properties = { screen = 1, tag = "2", border_width = 0, switchtotag=true } },
     { rule = { class = "Code" },
-       properties = { screen = 1, tag = "3", border_width = 0, switchtotag=true } },
+       properties = { screen = 1, tag = "3", switchtotag=true } },
     { rule = { class = "Zathura" },
-       properties = { screen = 1, tag = "4" } },
+       properties = { screen = 1, tag = "4", switchtotag=true } },
+    { rule = { class = "foxitreader.exe" },
+       properties = { screen = 1, tag = "4", switchtotag=true, border_width=0 } },
     { rule = { class = "mpv" },
-       properties = { screen = 1, tag = "5" } },
+       properties = { screen = 1, tag = "5", switchtotag=true } },
     { rule = { class = "Polybar" },
        properties = { border_width = 0} },
 }

@@ -232,7 +232,8 @@ root.buttons(gears.table.join(
 globalkeys = gears.table.join(
     awful.key({ modkey,           }, "F1",      hotkeys_popup.show_help,
       {description="show help", group="awesome"}),
-    awful.key({ modkey,           }, "x",      function() beautiful.master_width_factor=0.55 end,
+    awful.key({ modkey,           }, "x",      function() awful.screen.focused().selected_tag.master_width_factor = 0.55
+ end,
       {description="reset master size to 0.55", group="client"}),
     awful.key({ modkey,  "Shift"  }, "h",  function() client.focus = awful.client.getmaster(); client.focus:raise() end,
               {description = "Focus master", group = "client"}),
@@ -319,7 +320,7 @@ globalkeys = gears.table.join(
     awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
               {description = "run prompt", group = "launcher"}),
 
-    awful.key({ modkey }, "x",
+    awful.key({ modkey, "Shift" }, "x",
               function ()
                   awful.prompt.run {
                     prompt       = "Run Lua code: ",

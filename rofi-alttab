@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-rofi \
-      -show window  \
-      -selected-row 1 \
-      -kb-accept-entry "!Alt-Tab,!Alt+Alt_L"\
-      -kb-row-down "Alt+Tab" \

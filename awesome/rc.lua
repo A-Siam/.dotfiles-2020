@@ -504,9 +504,9 @@ awful.rules.rules = {
       }, properties = { titlebars_enabled = false }
     },
     { rule = { class = "Google-chrome" },
-       properties = { screen = 1, tag = "2", border_width = 0 } },
+       properties = { screen = 1, tag = "2", border_width = 0, switchtotag=true } },
     { rule = { class = "Code" },
-       properties = { screen = 1, tag = "3", border_width = 0} },
+       properties = { screen = 1, tag = "3", border_width = 0, switchtotag=true } },
     { rule = { class = "Zathura" },
        properties = { screen = 1, tag = "4" } },
     { rule = { class = "mpv" },

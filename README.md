@@ -7,4 +7,4 @@ sudo pacman -Syu base base-devel linux linux-firmware bluez bluez-utils blueman 
 yay -S mpv-mpris nerd-fonts-roboto-mono polybar colorpicker siji-git simple-mtpfs alttab-git batsignal batterymon-clone python2-notify xpaint bsp-layout emote lazygit xfdashboard ksuperkey
 ```
 - replace asiam with your user name 
-![screenshot](https://github.com/A-Siam/.dotfiles-2020/blob/master/screenshot.png?raw=true)
+![screenshot](screenshot.png)

@@ -57,6 +57,7 @@ alias hibernate="systemctl hibernate"
 alias docksa="systemctl start docker"
 alias dockso="systemctl stop docker"
 alias dcu="docker-compose up"
+alias sg="sxiv -a"
 
 # oracle xe env vars
 set -x ORACLE_HOME /opt/oracle/product/18c/dbhomeXE
@@ -88,3 +89,9 @@ fish_add_path /home/asiam/.local/bin
 source $HOME/.scripts/lficons.fish
 
 #this is a comment
+
+# a sane command not found handler
+function __fish_default_command_not_found_handler --on-event fish_command_not_found
+  functions --erase __fish_command_not_found_setup
+  echo "'$argv' Command not found"
+end

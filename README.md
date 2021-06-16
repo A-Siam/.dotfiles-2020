@@ -13,6 +13,9 @@ This sections includes all major element that you need to copy my system
 - Polybar
 - VsCode
 - Nvim
+- ibhagwan/picom
+- alttab
+- fish
 
 ## 📷 screenshot
 ![screenshot](ss.png)

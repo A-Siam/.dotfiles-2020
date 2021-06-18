@@ -39,8 +39,8 @@ format-offset =
 
 [colors]
 ; Nord theme ============
-background = #171A26
-background-alt = #666666
+background = #33171A26
+background-alt = #55666666
 foreground = #f3f4f5
 foreground-alt = #666666
 alert = #d08770

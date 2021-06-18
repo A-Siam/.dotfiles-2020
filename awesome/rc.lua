@@ -329,10 +329,10 @@ globalkeys = gears.table.join(
                     history_path = awful.util.get_cache_dir() .. "/history_eval"
                   }
               end,
-              {description = "lua execute prompt", group = "awesome"}),
+              {description = "lua execute prompt", group = "awesome"})
     -- Menubar
-    awful.key({ modkey }, "d", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+   --  ,awful.key({ modkey }, "d", function() menubar.show() end,
+   --            {description = "show the menubar", group = "launcher"})
 )
 
 clientkeys = gears.table.join(
@@ -492,6 +492,7 @@ awful.rules.rules = {
         -- and the name shown there might not match defined rules here.
         name = {
           "Event Tester",  -- xev.
+	  "Emulator", -- android emulator
         },
         role = {
           "AlarmWindow",  -- Thunderbird's calendar.
@@ -505,7 +506,7 @@ awful.rules.rules = {
       }, properties = { titlebars_enabled = false }
     },
     { rule = { class = "Google-chrome" },
-       properties = { screen = 1, tag = "2", border_width = 0, switchtotag=true } },
+       properties = { screen = 1, tag = "2", switchtotag=true } },
     { rule = { class = "Code" },
        properties = { screen = 1, tag = "3", switchtotag=true } },
     { rule = { class = "Zathura" },

@@ -3,6 +3,9 @@
 "rofi -show emoji -modi emoji"
     Mod4 + e
 
+"rofi -modi combi -combi-modi drun,run -show combi"
+    Mod4 + d
+
 # "$HOME/.scripts/rofi-alttab"
 #     Alt + Tab
 
@@ -215,8 +218,6 @@ Mod2 + XF86AudioMute
 # "bspc node -z top 0 -50 || bspc node -z bottom 0 -50"
 #     Mod4 + alt + k
 # 
-# "dmenu_run -b -i"
-#     Mod4+d
 # 
 # "bspc node -n 'last.!automatic.local'"
 #     Mod4+ p # "p" to "p"ush it to the "p"reselected

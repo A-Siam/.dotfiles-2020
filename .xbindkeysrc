@@ -27,6 +27,9 @@
 "$TERMINAL"
     Mod4 + Return
 
+"$TERMINAL -e python"
+    Mod4 + p
+
 "$TERMINAL -e "vim $HOME/.scripts/todos.sh""
     Mod4 + Shift + a
 

@@ -14,7 +14,6 @@ udiskie -t &
 # xcompmgr -c -l0 -t0 -r0 -o.00 &
 picom &
 wmname LG3D &
-hsetroot -solid '#303030'
 xrdb $HOME/.Xresources
 eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
 export $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
